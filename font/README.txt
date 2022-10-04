@@ -1,0 +1,1 @@
+Aqui colocar las tipografias .ttf
