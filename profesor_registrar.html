@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/plugin/bootstrap.css">
+  <link rel="stylesheet" href="css/plugin/bootstrap.min.css">
+  <link rel="stylesheet" href="css/plugin/dataTables.bootstrap4.min.css">
+  <link rel="stylesheet" href="css/plugin/fonts.css">
+  <link rel="stylesheet" href="css/plugin/fonts.min.css">
+  <link rel="stylesheet" href="css/estilo.css">
+  <title>Registrar Docentes</title>
+</head>
+
+<body>
+  <div>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg py-3 px-2 color rounded-4">
+      <!-- Container wrapper -->
+      <div class="container-fluid">
+        <!-- Toggle button -->
+        <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
+          data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <i class="fas fa-bars"></i>
+        </button>
+
+        <!-- Collapsible wrapper -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <!-- Navbar brand -->
+          <button class="border-0 mt-2 mt-lg-0" href="#">
+            <img src="https://mdbcdn.b-cdn.net/img/logo/mdb-transaprent-noshadows.webp" height="15" alt="MDB Logo"
+              loading="lazy" />
+          </button>
+
+        </div>
+        <!-- Collapsible wrapper -->
+
+        <!-- Right elements -->
+        <div class="d-flex align-items-center">
+          <!-- Icon -->
+          <a class="text-reset me-3" href="#">
+            <i class="fas fa-shopping-cart"></i>
+          </a>
+
+          <!-- Avatar -->
+          <div class="dropdown">
+            <button class="dropdown-toggle d-flex align-items-center hidden-arrow" href="#"
+              id="navbarDropdownMenuAvatar" role="button" data-mdb-toggle="dropdown" aria-expanded="false">
+              <img src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp" class="rounded-circle" height="25"
+                alt="Black and White Portrait of a Man" loading="lazy" />
+            </button>
+          </div>
+        </div>
+        <!-- Right elements -->
+      </div>
+      <!-- Container wrapper -->
+    </nav>
+    <!-- Navbar -->
+  </div>
+
+  <section class="d-flex justify-content-center mt-3">
+    <div class="card col-sm-6 p-3">
+      <div class="mb-3">
+        <h4> Docentes</h4>
+      </div>
+      <div class="mb-2">
+        <form action="" class="row g-2">
+          <div class="mb-2 col-md-12">
+            <label for="fprofesional">Familia Profesional</label>
+            <select class="form-control" class="form-select" aria-label="Default select example">
+              <option selected>Seleccionar opción </option>
+              <option value="1">A</option>
+              <option value="2">B</option>
+            </select>
+          </div>
+          <div class="mb-2 col-md-12">
+            <label for="Ginstrucción">Opción Ocupacional</label>
+            <select class="form-control" class="form-select" aria-label="Default select example">
+              <option selected>Seleccionar opción </option>
+              <option value="1">A</option>
+              <option value="2">B</option>
+            </select>
+          </div>
+          <div class="mb-2 col-md-12">
+            <label for="Ecivil">Módulos</label>
+            <select class="form-control" class="form-select" aria-label="Default select example">
+              <option selected>Seleccionar opción</option>
+              <option value="1">A</option>
+              <option value="2">B</option>s
+            </select>
+          </div>
+         
+          <div class="mb-2 col-md-12">
+            <label for="npdocentes">Nombres y Apellidos del Docente</label>
+            <input type="text" class="form-control" name="npdocentes" id="npdocentes" placeholder="Ejm. Juan Frank Ruiz">
+          </div>
+      </div>
+      <div class="d-grid gap-18 d-md-flex justify-content-md-end mt-4">
+        <button class="btn btn-outline-primary text-blue mx-3" type="button">Cancelar</button>
+
+        <button class="btn btn-primary mx-1" type="button">Guardar</button>
+      </div>
+
+      </form>
+    </div>
+    </div>
+  </section>
+
+</body>
+
+</html>

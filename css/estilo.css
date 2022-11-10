@@ -4,11 +4,22 @@
 	font-weight: normal;
 	font-style: normal;
 }
-body {
-    background-image: url('../assets/fondos/fondo.png');
+body { 
+    /* background-image: url('../assets/fondos/fondo.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    background-position: center;
+    background-position: center; */
     font-family: "Imprima";
+} 
+
+.color{
+    background: #F9748F;
 }
+
+.btncolor{
+   background: #0C2B98;
+}
+
+
+
