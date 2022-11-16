@@ -1,0 +1,1471 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<title>CETPRO</title>
+	<meta content='width=device-width, initial-scale=1.0, shrink-to-fit=no' name='viewport' />
+	<link rel="icon" href="img/icons/favicon.png" type="image/x-icon" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+	<link
+		href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+		rel="stylesheet">
+	<script src="js/plugin/webfont/webfont.min.js"></script>
+	<link href="css/plugin/fonts.min.css" rel="stylesheet" type="text/css">
+	<!-- CSS Files -->
+	<link rel="stylesheet" href="css/plugin/animate.css">
+	<link rel="stylesheet" href="css/plugin/bootstrap.min.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/mq.css">
+
+</head>
+
+<body>
+	<header>
+		<nav class="navbar navbar-light navbar-cear navbar-fixed">
+			<div class="container-fluid container-mobile ">
+				<div class="navbar-cear-menu">
+					<button type="button" name="button" class="btn btn-circle btn-icon" id="toggle-btn-sidebar">
+						<span class="material-icons-outlined">
+							menu
+						</span>
+					</button>
+					<a class="navbar-brand" href="#">
+						<h1 class="nav-item-logo">CETPRO - Lurín</h1>
+					</a>
+				</div>
+				<div class="btn-group">
+					<button type="button" class="btn dropdown-toggle btn-user" data-bs-toggle="dropdown"
+						aria-expanded="false">
+						<span class="user-name">
+							Monika Ruiz Pando
+						</span>
+						<span class="material-icons">
+							account_circle
+						</span>
+					</button>
+					<ul class="dropdown-menu dropdown-menu-end">
+						<li><button class="dropdown-item" type="button" id="btn-cerrar-sesion">Cerrar sesión</button>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<main class="bg-light">
+		<!-- Sidebar -->
+		<div class="sidebar-admin" id="sidebar-admin">
+			<p class="menu-item-title">MENÚ</p>
+			<ul class="sidebar-admin-list">
+				<li class="item-sidebar">
+					<button class="btn btn-toggle collapsed showDashboard active-item-sidebar active">
+						Dashboard
+					</button>
+				</li>
+
+				<li class="item-sidebar">
+					<button class="btn btn-toggle collapsed showMatricula">
+						Matricula
+					</button>
+				</li>
+			</ul>
+			<p class="menu-item-title">ESPECIALIDADES</p>
+			<ul class="sidebar-admin-list">
+				<li class="item-sidebar">
+					<button class="btn btn-toggle collapsed showFamiliaProfesional">
+						Familia profesionales
+					</button>
+				</li>
+
+				<li class="item-sidebar">
+					<button class="btn btn-toggle collapsed showOpcionOcupacional">
+						Opción ocupacional
+					</button>
+				</li>
+				<li class="item-sidebar">
+					<button class="btn btn-toggle collapsed showModulo">
+						Módulos
+					</button>
+				</li>
+				<li class="item-sidebar">
+					<button class="btn btn-toggle collapsed showDocentes">
+						Docentes
+					</button>
+				</li>
+			</ul>
+		</div>
+
+		<!-- end sidebar -->
+		<!-- main panel -->
+		<div class="admin-panel ml-panel" id="admin-panel">
+			<div class="panel active-panel" id="dashboard-panel">
+				<div class="row">
+				</div>
+			</div>
+			<div class="panel" id="matricula-panel">
+				<div class="row">
+					<div class="wrap-header-panel marginBottom-2">
+						<div class="header-panel">
+							<h2>
+								Matrícula
+							</h2>
+						</div><!-- showAgregarEspecialidad -->
+						<div class="header-panel">
+							<button type="button" id="btn-agregarEspecialidad" name="button"
+								class="btn btn-large secundary-button">
+								Exportar
+							</button>
+							<button type="button" id="btn-nuevo-matricula" name="button"
+								class="btn btn-large primary-button">
+								Nuevo
+							</button>
+						</div>
+
+					</div>
+
+
+
+					<section class="d-flex justify-content-center mt-4">
+
+						<table class="table col-sm-6">
+							<thead>
+								<tr>
+									<th scope="col">#</th>
+									<th scope="col" colspan="2"> Fecha </th>
+									<th scope="col" colspan="2">Estudiante</th>
+									<th scope="col" colspan="2">Especialidad</th>
+									<th scope="col" colspan="2">Módulo</th>
+									<th scope="col" colspan="2">Docente</th>
+									<th scope="col" colspan="2">Acciones</th>
+								</tr>
+							</thead>
+							<tbody class="table-group-divider">
+								<tr>
+									<th scope="row">1</th>
+									<td colspan="2">14-10-2022</td>
+									<td colspan="2">Monika Ruiz Pando</td>
+									<td colspan="2">Electricidad</td>
+									<td colspan="2">Módulo 1</td>
+									<td colspan="2">Juan Ruiz Soto</td>
+								</tr>
+								<tr>
+									<th scope="row">2</th>
+									<td colspan="2">14-10-2022</td>
+									<td colspan="2">Alicia Cerna Pajuelo</td>
+									<td colspan="2">Electricidad</td>
+									<td colspan="2">Módulo 2</td>
+									<td colspan="2">Carlos Torres Robles</td>
+								</tr>
+
+							</tbody>
+						</table>
+
+					</section>
+
+				</div>
+			</div>
+
+			<div class="panel" id="familia-profesional-panel">
+				<div class="row">
+					<div class="wrap-header-panel marginBottom-2">
+						<div class="header-panel">
+							<h2>
+								Familia Profesional
+							</h2>
+						</div><!-- showAgregarEspecialidad -->
+						<div class="header-panel">
+							<button type="button" id="btn-agregarEspecialidad" name="button"
+								class="btn btn-large secundary-button">
+								Exportar
+							</button>
+							<button type="button" id="btn-nuevo-familia" name="button"
+								class="btn btn-large primary-button">
+								Nuevo
+							</button>
+						</div>
+
+					</div>
+
+
+
+					<section class="d-flex justify-content-center mt-4">
+
+						<table class="table col-sm-6">
+							<thead>
+								<tr>
+									<th scope="col">#</th>
+									<th scope="col">Familia Profesional</th>
+									<th scope="col">Descripción</th>
+									<th scope="col">Acciones</th>
+								</tr>
+							</thead>
+							<tbody class="table-group-divider">
+								<tr>
+									<th scope="row">1</th>
+									<td>Electricidad y Electronica</td>
+									<td>Familia Profesional de electricad</td>
+									<td></td>
+								</tr>
+							</tbody>
+						</table>
+
+					</section>
+
+				</div>
+			</div>
+
+			<div class="panel" id="opcion-ocupacional-panel">
+				<div class="row">
+					<div class="wrap-header-panel marginBottom-2">
+						<div class="header-panel">
+							<h2>
+								Opción Ocupacional
+							</h2>
+						</div><!-- showAgregarEspecialidad -->
+						<div class="header-panel">
+							<button type="button" id="btn-agregarEspecialidad" name="button"
+								class="btn btn-large secundary-button">
+								Exportar
+							</button>
+							<button type="button" id="btn-nuevo-opcion" name="button"
+								class="btn btn-large primary-button">
+								Nuevo
+							</button>
+						</div>
+
+					</div>
+
+
+
+					<section class="d-flex justify-content-center mt-4">
+
+						<table class="table col-sm-6">
+							<thead>
+								<tr>
+									<th scope="col">#</th>
+									<th scope="col">Familia Profesional</th>
+									<th scope="col">Opción Ocupacional</th>
+									<th scope="col">Acciones</th>
+								</tr>
+							</thead>
+							<tbody class="table-group-divider">
+								<tr>
+									<th scope="row">1</th>
+									<td>Electricidad y Electronica</td>
+									<td>Electricidad</td>
+									<td> </td>
+								</tr>
+
+							</tbody>
+						</table>
+
+					</section>
+
+				</div>
+			</div>
+
+			<div class="panel" id="modulo-panel">
+				<div class="row">
+					<div class="wrap-header-panel marginBottom-2">
+						<div class="header-panel">
+							<h2>
+								Módulos
+							</h2>
+						</div><!-- showAgregarEspecialidad -->
+						<div class="header-panel">
+							<button type="button" id="btn-agregarEspecialidad" name="button"
+								class="btn btn-large secundary-button">
+								Exportar
+							</button>
+							<button type="button" id="btn-nuevo-modulo" name="button"
+								class="btn btn-large primary-button">
+								Nuevo
+							</button>
+						</div>
+
+					</div>
+
+
+
+					<section class="d-flex justify-content-center mt-4">
+
+						<table class="table col-sm-6">
+							<thead>
+								<tr>
+									<th scope="col">#</th>
+									<th scope="col">Familia Profesional</th>
+									<th scope="col">Opción Ocupacional</th>
+									<th scope="col">Módulos</th>
+									<th scope="col">Acciones</th>
+								</tr>
+							</thead>
+							<tbody class="table-group-divider">
+								<tr>
+									<th scope="row">1</th>
+									<td>Electricidad y Electronica</td>
+									<td>Electricidad</td>
+									<td>Instalaciones Eléctricas</td>
+									<td> </td>
+								</tr>
+								<tr>
+									<th scope="row">2</th>
+									<td>Electricidad y Electronica</td>
+									<td>Electricidadn</td>
+									<td>Reparación de Electrodomésticos</td>
+									<td> </td>
+								</tr>
+
+							</tbody>
+						</table>
+
+					</section>
+
+				</div>
+			</div>
+
+			<div class="panel" id="docente-panel">
+				<div class="row">
+					<div class="wrap-header-panel marginBottom-2">
+						<div class="header-panel">
+							<h2>
+								Docentes
+							</h2>
+						</div><!-- showAgregarEspecialidad -->
+						<div class="header-panel">
+							<button type="button" id="btn-agregarEspecialidad" name="button"
+								class="btn btn-large secundary-button">
+								Exportar
+							</button>
+							<button type="button" id="btn-nuevo-docente" name="button"
+								class="btn btn-large primary-button">
+								Nuevo
+							</button>
+						</div>
+
+					</div>
+
+
+
+					<section class="d-flex justify-content-center mt-4">
+
+						<table class="table col-sm-6">
+							<thead>
+								<tr>
+									<th scope="col">#</th>
+									<th scope="col">Familia Profesional</th>
+									<th scope="col">Opción Ocupacional</th>
+									<th scope="col">Módulos</th>
+									<th scope="col">Docentes</th>
+									<th scope="col">Acciones</th>
+								</tr>
+							</thead>
+							<tbody class="table-group-divider">
+								<tr>
+									<th scope="row">1</th>
+									<td>Electricidad y Electronica</td>
+									<td>Electricidad</td>
+									<td>Instalaciones Electricas</td>
+									<td>Juan Frank Ruiz</td>
+									<td> </td>
+								</tr>
+							</tbody>
+						</table>
+					</section>
+
+				</div>
+			</div>
+			<div class="panel" id="docente-registro-panel">
+				<div class="row">
+					<div class="wrap-header-panel marginBottom-2">
+						<div class="header-panel">
+							<h2>
+								Docentes
+							</h2>
+						</div><!-- showAgregarEspecialidad -->
+					</div>
+
+
+
+					<section class="d-flex justify-content-center mt-4">
+
+						<form action="" class="row g-2">
+							<div>
+								<div class="mb-2 col-md-12">
+									<label for="fprofesional">Familia Profesional</label>
+									<select class="form-control" class="form-select"
+										aria-label="Default select example">
+										<option selected>Seleccionar opción </option>
+										<option value="1">A</option>
+										<option value="2">B</option>
+									</select>
+								</div>
+								<div class="mb-2 col-md-12">
+									<label for="Ginstrucción">Opción Ocupacional</label>
+									<select class="form-control" class="form-select"
+										aria-label="Default select example">
+										<option selected>Seleccionar opción </option>
+										<option value="1">A</option>
+										<option value="2">B</option>
+									</select>
+								</div>
+								<div class="mb-2 col-md-12">
+									<label for="Ecivil">Módulos</label>
+									<select class="form-control" class="form-select"
+										aria-label="Default select example">
+										<option selected>Seleccionar opción</option>
+										<option value="1">A</option>
+										<option value="2">B</option>s
+									</select>
+								</div>
+
+								<div class="mb-2 col-md-12">
+									<label for="npdocentes">Nombres y Apellidos del Docente</label>
+									<input type="text" class="form-control" name="npdocentes" id="npdocentes"
+										placeholder="Ejm. Juan Frank Ruiz">
+								</div>
+							</div>
+							<div class="d-grid gap-18 d-md-flex justify-content-md-end mt-4">
+								<button class="btn btn-large secundary-button text-blue mx-3 btn-registro-docente"
+									type="button">Cancelar</button>
+
+								<button class="btn btn-large primary-button mx-1 btn-registro-docente"
+									type="button">Guardar</button>
+							</div>
+
+						</form>
+					</section>
+
+				</div>
+
+			</div>
+
+			<div class="panel" id="modulo-registro-panel">
+				<div class="row">
+					<div class="wrap-header-panel marginBottom-2">
+						<div class="header-panel">
+							<h2>
+								Módulo
+							</h2>
+						</div><!-- showAgregarEspecialidad -->
+					</div>
+
+
+
+					<section class="d-flex justify-content-center mt-4">
+
+						<form action="" class="row g-2">
+							<div>
+								<div class="mb-2 col-md-12">
+									<label for="fprofesional">Familia Profesional</label>
+									<select class="form-control" class="form-select"
+										aria-label="Default select example">
+										<option selected>Seleccionar opción </option>
+										<option value="1">A</option>
+										<option value="2">B</option>
+									</select>
+								</div>
+								<div class="mb-2 col-md-12">
+									<label for="Ginstrucción">Opción Ocupacional</label>
+									<select class="form-control" class="form-select"
+										aria-label="Default select example">
+										<option selected>Seleccionar opción </option>
+										<option value="1">A</option>
+										<option value="2">B</option>
+									</select>
+								</div>
+
+								<div class="mb-2 col-md-12">
+									<label for="nmodulo">Nombre de Módulo</label>
+									<input type="text" class="form-control" name="nmodulo" id="nmodulo"
+										placeholder="Ejm. Instalaciones Electricas">
+								</div>
+								<!-- --Aqui empieza falta completar--- -->
+								<div class="mb-2 col-md-3">
+									<div><label for="nmodulo">Duración de horas</label></div>
+									<div><input type="text" class="form-control" name="nmodulo" id="nmodulo"
+											placeholder=" "></div>
+								</div>
+							</div>
+							<div class="d-grid gap-18 d-md-flex justify-content-md-end mt-4">
+								<button class="btn btn-large secundary-button text-blue mx-3 btn-registro-modulo"
+									type="button">Cancelar</button>
+
+								<button class="btn btn-large primary-button mx-1 btn-registro-modulo"
+									type="button">Guardar</button>
+							</div>
+
+						</form>
+					</section>
+
+				</div>
+
+			</div>
+
+			<div class="panel" id="opcion-ocupacional-registro-panel">
+				<div class="row">
+					<div class="wrap-header-panel marginBottom-2">
+						<div class="header-panel">
+							<h2>
+								Opción Ocupacional
+							</h2>
+						</div><!-- showAgregarEspecialidad -->
+					</div>
+
+
+
+					<section class="d-flex justify-content-center mt-4">
+
+						<form action="" class="row g-2">
+							<div>
+								<div>
+									<div class="mb-2 col-md-12">
+										<label for="fprofesional">Familia Profesional</label>
+										<select class="form-control" class="form-select"
+											aria-label="Default select example">
+											<option selected>Seleccionar opción </option>
+											<option value="1">A</option>
+											<option value="2">B</option>
+										</select>
+									</div>
+
+
+									<div class="mb-2 col-md-12">
+										<label for="nombre">Nombre</label>
+										<input type="text" class="form-control" name="nombre" id="nombre"
+											placeholder="Ejm. Eléctricidad">
+									</div>
+								</div>
+								<div class="d-grid gap-18 d-md-flex justify-content-md-end mt-4">
+									<button class="btn btn-large secundary-button text-blue mx-3 btn-registro-opcion"
+										type="button">Cancelar</button>
+
+									<button class="btn btn-large primary-button mx-1 btn-registro-opcion"
+										type="button">Guardar</button>
+								</div>
+
+						</form>
+					</section>
+
+				</div>
+
+			</div>
+
+			<div class="panel" id="familia-profesional-registro-panel">
+				<div class="row">
+					<div class="wrap-header-panel marginBottom-2">
+						<div class="header-panel">
+							<h2>
+								Familia Profesional
+							</h2>
+						</div><!-- showAgregarEspecialidad -->
+					</div>
+
+
+
+					<section class="d-flex justify-content-center mt-4">
+
+						<form action="" class="row g-2">
+							<div>
+								<div class="mb-2 col-md-12">
+									<label for="nombredocente">Nombre</label>
+									<input type="text" class="form-control" name="nombredocente" id="nombredocente"
+										placeholder="Ejm. Eléctricidad">
+								</div>
+								<div class="mb-2 col-md-12">
+									<label for="descripción">Descripción</label>
+									<input type="text" class="form-control" name="descripción" id="descripción"
+										placeholder="Escribe aquí">
+								</div>
+								<div class="mb-3 col-md-12 mt-3">
+									<input type="file" id="formFileMultiple" multiple>
+								</div>
+							</div>
+							<div class="d-grid gap-18 d-md-flex justify-content-md-end mt-4">
+								<button class="btn btn-large secundary-button text-blue mx-3 btn-registro-familia"
+									type="button">Cancelar</button>
+
+								<button class="btn btn-large primary-button mx-1 btn-registro-familia"
+									type="button">Guardar</button>
+							</div>
+
+						</form>
+					</section>
+
+				</div>
+
+			</div>
+
+			<div class="panel" id="matricula-registro-panel">
+				<div class="row">
+					<div class="wrap-header-panel marginBottom-2">
+						<div class="header-panel">
+							<h2>
+								Datos académicos
+							</h2>
+						</div><!-- showAgregarEspecialidad -->
+					</div>
+
+
+
+					<section class="d-flex justify-content-center mt-4">
+
+						<form action="" class="row g-2">
+							<div>
+								<div class="row">
+									<div class="mb-2 col-md-8">
+										<label for="dni">Número de Documento</label>
+										<input type="text" class="form-control" name="dni" id="dni"
+											placeholder="Ejm.73019146">
+									</div>
+									<div class="d-grid gap-16 d-md-flex justify-content-md-end mt-4 mb-2 col-md-4 ">
+										<button class="btn btn-primary " type="button" id="btn-nuevo-estudiante">Nuevo
+											Estudiante</button>
+									</div>
+								</div>
+
+								<div class="mb-2 col-md-12">
+									<label for="nombre">Apellidos y Nombres</label>
+									<input type="text" class="form-control" name="nombre" id="nombre"
+										placeholder="Ejm. Monika Milagros Amelia">
+								</div>
+								<div class="row">
+									<div class="mb-2 col-md-6">
+										<label for="Ginstrucción">Ciclo</label>
+										<select class="form-control" class="form-select"
+											aria-label="Default select example">
+											<option selected>Seleccionar opción </option>
+											<option value="1">Primer Ciclo</option>
+											<option value="2">Segundo Ciclo</option>
+										</select>
+									</div>
+									<div class="mb-2 col-md-6">
+										<label for="Ecivil">Especialidad</label>
+										<select class="form-control" class="form-select"
+											aria-label="Default select example">
+											<option selected>Seleccionar opción </option>
+											<option value="1">Soltero</option>
+											<option value="2">Casado</option>s
+										</select>
+									</div>
+								</div>
+								<div class="row">
+									<div class="mb-2 col-md-6">
+										<label for="pais">Módulo</label>
+										<select class="form-control" class="form-select"
+											aria-label="Default select example">
+											<option selected>Seleccionar opción </option>
+											<option value="1">Perú</option>
+											<option value="2">Venezuela</option>s
+										</select>
+									</div>
+									<div class="mb-2 col-md-6">
+										<label for="departamento">Docente</label>
+										<select class="form-control" class="form-select"
+											aria-label="Default select example">
+											<option selected>Seleccionar opción </option>
+											<option value="1">Lima</option>
+											<option value="2">Amazonas</option>s
+										</select>
+									</div>
+								</div>
+								<div class="row">
+									<div class="mb-2 col-md-4">
+										<label for="duración">Duración</label>
+										<input type="text" class="form-control" name="duración" id="duración"
+											placeholder=" ">
+									</div>
+									<div class="mb-2 col-md-4">
+										<label for="provincia">Turno</label>
+										<select class="form-control" class="form-select"
+											aria-label="Default select example">
+											<option selected>Seleccionar opción </option>
+											<option value="1">Lima</option>
+											<option value="2">Ayacucho</option>s
+										</select>
+									</div>
+									<div class="mb-2 col-md-4">
+										<label for="departamento">Sección</label>
+										<select class="form-control" class="form-select"
+											aria-label="Default select example">
+											<option selected> Seleccionar opción </option>
+											<option value="1">Lurin</option>
+											<option value="2">Cieneguilla</option>s
+										</select>
+									</div>
+								</div>
+								<div class="row">
+									<div class="mb-2 col-md-6">
+										<label for="finicio">Fecha de Inicio</label>
+										<input type="text" class="form-control" name="finicio" id="finicio"
+											placeholder="02/11/2022">
+									</div>
+									<div class="mb-2 col-md-6">
+										<label for="ftermino">Fecha de Termino</label>
+										<input type="text" class="form-control" name="ftermino" id="ftermino"
+											placeholder="22/12/2022">
+									</div>
+								</div>
+								<div class="mb-2 col-md-12">
+									<label for="ftermino">Requisitos</label>
+								</div>
+								<div class="form-check form-check-inline col-md-3 ">
+
+									<input class="form-check-input" type="checkbox" id="inlineCheckbox1"
+										value="option1">
+									<label class="form-check-label" for="inlineCheckbox1">Copia de DNI</label>
+								</div>
+								<div class="form-check form-check-inline col-md-3">
+									<input class="form-check-input" type="checkbox" id="inlineCheckbox2"
+										value="option2">
+									<label class="form-check-label" for="inlineCheckbox2">4 Fotos Carnet</label>
+								</div>
+								<div class="form-check form-check-inline col-md-3">
+									<input class="form-check-input" type="checkbox" id="inlineCheckbox2"
+										value="option2">
+									<label class="form-check-label" for="inlineCheckbox2">1 Mica A4</label>
+								</div>
+								<div class="form-check form-check-inline col-md-2">
+									<input class="form-check-input" type="checkbox" id="inlineCheckbox2"
+										value="option2">
+									<label class="form-check-label" for="inlineCheckbox2">Donación</label>
+								</div>
+							</div>
+							<div class="d-grid gap-18 d-md-flex justify-content-md-end mt-4">
+								<button class="btn btn-large secundary-button text-blue mx-3 btn-registro-matricula"
+									type="button">Cancelar</button>
+
+								<button class="btn btn-large primary-button mx-1 btn-registro-matricula"
+									type="button">Guardar</button>
+							</div>
+
+						</form>
+					</section>
+
+				</div>
+
+			</div>
+			<div class="panel" id="estudiante-registro-panel">
+				<div class="row">
+					<div class="wrap-header-panel marginBottom-2">
+						<div class="header-panel">
+							<h2>
+								Estudiante
+							</h2>
+						</div><!-- showAgregarEspecialidad -->
+					</div>
+
+
+
+					<section class="d-flex justify-content-center mt-4">
+
+						<form action="" class="row g-2">
+							<div>
+								<div class="row">
+									<div class="mb-2 col-md-6">
+										<label for="nombre">Tipo de documento de identidad</label>
+										<select class="form-control" class="form-select"
+											aria-label="Default select example">
+											<option selected>Seleccionar opción </option>
+											<option value="1">DNI</option>
+											<option value="2">CARNET DE EXTRANJERÍA</option>
+										</select>
+									</div>
+									<div class="mb-2 col-md-6">
+										<label for="dni">Número de Documento</label>
+										<input type="text" class="form-control" name="dni" id="dni"
+											placeholder="Ejm.73019146">
+									</div>
+								</div>
+								<div class="mb-2 col-md-12">
+									<label for="nombre">Nombres</label>
+									<input type="text" class="form-control" name="nombre" id="nombre"
+										placeholder="Ejm. Monika Milagros Amelia">
+								</div>
+								<div class="row">
+									<div class="mb-2 col-md-6">
+										<label for="apaterno">Apellido Paterno</label>
+										<input type="text" class="form-control" name="apaterno" id="apaterno"
+											placeholder="Ejm. Ruiz">
+									</div>
+									<div class="mb-2 col-md-6">
+										<label for="amaterno">Apellido Materno</label>
+										<input type="text" class="form-control" name="amaterno" id="amaterno"
+											placeholder="Ejm. Pando">
+									</div>
+								</div>
+								<div class="mb-2 col-md-12">
+
+									<label for="sexo">Sexo</label>
+									<input type="radio" name="sexo" id="masculino" value="masculino"> Masculino
+									<input type="radio" name="sexo" id="femenino" value="femeninoo"> Femenino
+									</label>
+								</div>
+								<div class="row">
+									<div class="mb-2 col-md-6">
+										<label for="Fnacimiento">Fecha de Nacimiento</label>
+										<input type="text" class="form-control" name="Fnacimiento" id="Fnacimiento"
+											placeholder="12/08/2000">
+									</div>
+									<div class="mb-2 col-md-6">
+										<label for="Edad">Edad</label>
+										<input type="text" class="form-control" name="edad" id="edad"
+											placeholder="Ejm. 22">
+									</div>
+								</div>
+								<div class="row">
+									<div class="mb-2 col-md-6">
+										<label for="Ginstrucción">Grado de Instrucción</label>
+										<select class="form-control" class="form-select"
+											aria-label="Default select example">
+											<option selected>Seleccionar opción </option>
+											<option value="1">Secundaria</option>
+											<option value="2">Estudios Superiores</option>
+										</select>
+									</div>
+									<div class="mb-2 col-md-6">
+										<label for="Ecivil">Estado Civil</label>
+										<select class="form-control" class="form-select"
+											aria-label="Default select example">
+											<option selected>Seleccionar opción </option>
+											<option value="1">Soltero</option>
+											<option value="2">Casado</option>s
+										</select>
+									</div>
+								</div>
+								<div class="row">
+									<div class="mb-2 col-md-6">
+										<label for="pais">País</label>
+										<select class="form-control" class="form-select"
+											aria-label="Default select example">
+											<option selected>Seleccionar opción </option>
+											<option value="1">Perú</option>
+											<option value="2">Venezuela</option>s
+										</select>
+									</div>
+									<div class="mb-2 col-md-6">
+										<label for="departamento">Departamento</label>
+										<select class="form-control" class="form-select"
+											aria-label="Default select example">
+											<option selected>Seleccionar opción </option>
+											<option value="1">Lima</option>
+											<option value="2">Amazonas</option>s
+										</select>
+									</div>
+								</div>
+								<div class="row">
+									<div class="mb-2 col-md-6">
+										<label for="provincia">Provincia</label>
+										<select class="form-control" class="form-select"
+											aria-label="Default select example">
+											<option selected>Seleccionar opción </option>
+											<option value="1">Lima</option>
+											<option value="2">Ayacucho</option>s
+										</select>
+									</div>
+									<div class="mb-2 col-md-6">
+										<label for="departamento">Distrito</label>
+										<select class="form-control" class="form-select"
+											aria-label="Default select example">
+											<option selected> Seleccionar opción
+											<option>
+											<option value="1">Lurin</option>
+											<option value="2">Cieneguilla</option>s
+										</select>
+									</div>
+								</div>
+								<div class="mb-2 col-md-12">
+									<label for="dirección">Dirección</label>
+									<input type="text" class="form-control" name="dirección" id="dirección"
+										placeholder="Ejm. Jr. Moore 412 Int.B">
+								</div>
+								<div class="row">
+									<div class="mb-2 col-md-6">
+										<label for="telefono">Télefono</label>
+										<input type="text" class="form-control" name="telefono" id="telefono"
+											placeholder="Ejm. 999555888">
+									</div>
+									<div class="mb-2 col-md-6">
+										<label for="correo">Correo</label>
+										<input type="text" class="form-control" name="correo" id="correo"
+											placeholder="Ejm. monikaruizpando@gmail.com">
+									</div>
+								</div>
+							</div>
+							<div class="d-grid gap-18 d-md-flex justify-content-md-end mt-4">
+								<button class="btn btn-large secundary-button text-blue mx-3 btn-registro-estudiante"
+									type="button">Cancelar</button>
+
+								<button class="btn btn-large primary-button mx-1 btn-registro-estudiante"
+									type="button">Guardar</button>
+							</div>
+
+						</form>
+					</section>
+
+				</div>
+
+			</div>
+		</div>
+		<!-- End main panel -->
+	</main>
+
+	<!-- LOADER -->
+	<div class="loader">
+		<img src="img/icons/loader.gif" alt="">
+		<span>Cargando...</span>
+	</div>
+	<!-- END LOADER -->
+
+	<!-- Modals -->
+
+
+	<!-- Modal -->
+	<div class="modal fade modalInfo" id="modalContraOlvidada" tabindex="-1" role="dialog"
+		aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<h1 class="modal-title marginBottom-1-5 text-center">Recuperación de contraseña</h1>
+					<p class="text-center">
+						Ingresa tu usuario para solicitar la recuperación de tu contraseña:
+					</p>
+					<div class="marginBottom-1">
+						<label for="inputUser" class="form-label">Usuario</label>
+						<input type="text" class="form-control" id="inputUser">
+						<small class="text-help">
+							<span class="material-icons">
+								report_problem
+							</span>
+							El usuario es incorrecto
+						</small>
+					</div>
+				</div>
+				<div class="modal-footer marginBottom-2">
+					<button type="button" class="btn btn-large primary-button" data-bs-dismiss="modal">
+						Solicitar recuperación
+					</button>
+					<button type="button" class="btn btn-large link-button" data-bs-dismiss="modal">
+						Cancelar
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade modalInfo" id="modalFiltrosProfesionales" tabindex="-1" role="dialog"
+		aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-lg" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<h1 class="modal-title marginBottom-1-5 text-center">Selecciona los filtros</h1>
+
+					<div class="row">
+						<div class="col-lg-6 marginBottom-2">
+							<div class="accordion accordionCollapse" id="accordionFiltroAsignacion">
+								<div class="accordion-item">
+									<h2 class="accordion-header" id="headingCollapseFiltroAsignacion">
+										<button class="accordion-button" type="button" data-bs-toggle="collapse"
+											data-bs-target="#collapseFiltroAsignacion" aria-expanded="false"
+											aria-controls="collapseFiltroAsignacion">
+											Asignación
+										</button>
+									</h2>
+									<div id="collapseFiltroAsignacion" class="accordion-collapse collapse"
+										aria-labelledby="headingCollapseFiltroAsignacion"
+										data-bs-parent="#accordionFiltroAsignacion">
+										<div class="accordion-body">
+											<div class="form-check">
+												<input class="form-check-input" type="checkbox" value=""
+													id="checkAsignado" checked>
+												<label class="form-check-label" for="checkAsignado">
+													Asignado
+												</label>
+											</div>
+											<div class="form-check">
+												<input class="form-check-input" type="checkbox" value=""
+													id="checkNoAsignado">
+												<label class="form-check-label" for="checkNoAsignado">
+													No Asignado
+												</label>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<small class="text-help">
+								<span class="material-icons">
+									report_problem
+								</span>
+								Campo obligatorio
+							</small>
+						</div>
+
+						<div class="col-lg-6 marginBottom-2">
+							<div class="accordion accordionCollapse" id="accordionFiltroEstado">
+								<div class="accordion-item">
+									<h2 class="accordion-header" id="headingCollapseFiltroEstado">
+										<button class="accordion-button" type="button" data-bs-toggle="collapse"
+											data-bs-target="#collapseFiltroEstado" aria-expanded="false"
+											aria-controls="collapseFiltroEstado">
+											Estado
+										</button>
+									</h2>
+									<div id="collapseFiltroEstado" class="accordion-collapse collapse"
+										aria-labelledby="headingCollapseFiltroEstado"
+										data-bs-parent="#accordionFiltroEstado">
+										<div class="accordion-body">
+											<div class="form-check">
+												<input class="form-check-input" type="checkbox" value=""
+													id="checkHabilitado">
+												<label class="form-check-label" for="checkHabilitado">
+													Habilitado
+												</label>
+											</div>
+											<div class="form-check">
+												<input class="form-check-input" type="checkbox" value=""
+													id="checkNoHabilitado">
+												<label class="form-check-label" for="checkNoHabilitado">
+													No Habilitado
+												</label>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<small class="text-help">
+								<span class="material-icons">
+									report_problem
+								</span>
+								Campo obligatorio
+							</small>
+						</div>
+
+						<div class="col-lg-6 marginBottom-2">
+							<div class="accordion accordionCollapse" id="accordionFiltroDesignacion">
+								<div class="accordion-item">
+									<h2 class="accordion-header" id="headingCollapseFiltroDesignacion">
+										<button class="accordion-button" type="button" data-bs-toggle="collapse"
+											data-bs-target="#collapseFiltroDesignacion" aria-expanded="false"
+											aria-controls="collapseFiltroDesignacion">
+											Tipo de Designación
+										</button>
+									</h2>
+									<div id="collapseFiltroDesignacion" class="accordion-collapse collapse"
+										aria-labelledby="headingCollapseFiltroDesignacion"
+										data-bs-parent="#accordionFiltroDesignacion">
+										<div class="accordion-body">
+											<div class="form-check">
+												<input class="form-check-input" type="checkbox" value=""
+													id="checkContratacionPublica">
+												<label class="form-check-label" for="checkContratacionPublica">
+													Contratación Pública
+												</label>
+											</div>
+											<div class="form-check">
+												<input class="form-check-input" type="checkbox" value=""
+													id="checkArbitrajeGeneral">
+												<label class="form-check-label" for="checkArbitrajeGeneral">
+													Arbitraje General
+												</label>
+											</div>
+											<div class="form-check">
+												<input class="form-check-input" type="checkbox" value=""
+													id="checkArbitrajeEmergencia">
+												<label class="form-check-label" for="checkArbitrajeEmergencia">
+													Arbitraje de Emergencia
+												</label>
+											</div>
+											<div class="form-check">
+												<input class="form-check-input" type="checkbox" value=""
+													id="checkArbitrajePeritaje">
+												<label class="form-check-label" for="checkArbitrajePeritaje">
+													Peritaje
+												</label>
+											</div>
+											<div class="form-check">
+												<input class="form-check-input" type="checkbox" value=""
+													id="checkResolucionDisputas">
+												<label class="form-check-label" for="checkResolucionDisputas">
+													Junta de Resolución de Disputas
+												</label>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<small class="text-help">
+								<span class="material-icons">
+									report_problem
+								</span>
+								Campo obligatorio
+							</small>
+						</div>
+
+						<div class="col-lg-6 marginBottom-2">
+							<div class="accordion accordionCollapse" id="accordionFiltroEspecialidades">
+								<div class="accordion-item">
+									<h2 class="accordion-header" id="headingCollapseFiltroEspecialidades">
+										<button class="accordion-button" type="button" data-bs-toggle="collapse"
+											data-bs-target="#collapseFiltroEspecialidades" aria-expanded="false"
+											aria-controls="collapseFiltroEspecialidades">
+											Especialidades
+										</button>
+									</h2>
+									<div id="collapseFiltroEspecialidades" class="accordion-collapse collapse"
+										aria-labelledby="headingCollapseFiltroEspecialidades"
+										data-bs-parent="#accordionFiltroEspecialidades">
+										<div class="accordion-body">
+											<div class="form-check">
+												<input class="form-check-input" type="checkbox" value=""
+													id="checkContratacionEstado">
+												<label class="form-check-label" for="checkContratacionEstado">
+													Contratación con el estado
+												</label>
+											</div>
+											<div class="form-check">
+												<input class="form-check-input" type="checkbox" value=""
+													id="checkArbitraje">
+												<label class="form-check-label" for="checkArbitraje">
+													Arbitraje
+												</label>
+											</div>
+											<div class="form-check">
+												<input class="form-check-input" type="checkbox" value=""
+													id="checkDerechoAdministrativo">
+												<label class="form-check-label" for="checkDerechoAdministrativo">
+													Derecho Administrativo
+												</label>
+											</div>
+											<div class="form-check">
+												<input class="form-check-input" type="checkbox" value=""
+													id="checkRnaOsce">
+												<label class="form-check-label" for="checkRnaOsce">
+													RNA-OSCE
+												</label>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<small class="text-help">
+								<span class="material-icons">
+									report_problem
+								</span>
+								Campo obligatorio
+							</small>
+						</div>
+
+						<div class="col-lg-6 marginBottom-2">
+							<div class="accordion accordionCollapse" id="accordionFiltroArbitraje">
+								<div class="accordion-item">
+									<h2 class="accordion-header" id="headingCollapseFiltroArbitraje">
+										<button class="accordion-button" type="button" data-bs-toggle="collapse"
+											data-bs-target="#collapseFiltroArbitraje" aria-expanded="false"
+											aria-controls="collapseFiltroArbitraje">
+											Tipo de Arbitraje
+										</button>
+									</h2>
+									<div id="collapseFiltroArbitraje" class="accordion-collapse collapse"
+										aria-labelledby="headingCollapseFiltroArbitraje"
+										data-bs-parent="#accordionFiltroArbitraje">
+										<div class="accordion-body">
+											<div class="form-check">
+												<input class="form-check-input" type="checkbox" value=""
+													id="checkArbitroPresidenteUnico">
+												<label class="form-check-label" for="checkArbitroPresidenteUnico">
+													Árbitro Presidente/Único
+												</label>
+											</div>
+											<div class="form-check">
+												<input class="form-check-input" type="checkbox" value=""
+													id="checkArbitroParte">
+												<label class="form-check-label" for="checkArbitroParte">
+													Árbitro Parte
+												</label>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<small class="text-help">
+								<span class="material-icons">
+									report_problem
+								</span>
+								Campo obligatorio
+							</small>
+						</div>
+					</div>
+
+				</div>
+				<div class="modal-footer marginBottom-2">
+					<button type="button" class="btn btn-large primary-button" data-bs-dismiss="modal">
+						Aplicar filtros
+					</button>
+					<button type="button" class="btn btn-large link-button" data-bs-dismiss="modal">
+						Cancelar
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade modalInfo" id="modalDatosGuardados" tabindex="-1" role="dialog"
+		aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body text-left">
+					<div class="content-icon-modal">
+						<span class="material-icons success-color">
+							check_circle
+						</span>
+					</div>
+					<h1 class="modal-title marginBottom-1-5 text-center">Datos guardados con éxito</h1>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn link-button" data-bs-dismiss="modal">
+						Cerrar
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade modalInfo" id="modalEliminarDesignacion" tabindex="-1" role="dialog"
+		aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<p class="modal-subtitle">
+						Estás eliminando el tipo de designación:
+					</p>
+					<h2 class="modal-title marginBottom-1-5 text-center">Junta de Resolución de Disputas</h2>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-danger btn-large" data-bs-dismiss="modal">
+						Eliminar
+					</button>
+					<button type="button" class="btn link-button" data-bs-dismiss="modal">
+						Cancelar
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade modalInfo" id="modalEliminarEspecialidad" tabindex="-1" role="dialog"
+		aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<p class="modal-subtitle">
+						Estás eliminando la especialidad:
+					</p>
+					<h2 class="modal-title marginBottom-1-5 text-center">Derecho Administrativo</h2>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-danger btn-large" data-bs-dismiss="modal">
+						Eliminar
+					</button>
+					<button type="button" class="btn link-button" data-bs-dismiss="modal">
+						Cancelar
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade modalInfo" id="modalEliminarProfesion" tabindex="-1" role="dialog"
+		aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<p class="modal-subtitle">
+						Estás eliminando la profesión:
+					</p>
+					<h2 class="modal-title marginBottom-1-5 text-center">Ingeniero de minas</h2>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-danger btn-large" data-bs-dismiss="modal">
+						Eliminar
+					</button>
+					<button type="button" class="btn link-button" data-bs-dismiss="modal">
+						Cancelar
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade modalInfo" id="modalEliminarCaso" tabindex="-1" role="dialog"
+		aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<p class="modal-subtitle">
+						Estás eliminando el caso:
+					</p>
+					<h2 class="modal-title marginBottom-1-5 text-center">Nombre del caso</h2>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-danger btn-large" data-bs-dismiss="modal">
+						Eliminar
+					</button>
+					<button type="button" class="btn link-button" data-bs-dismiss="modal">
+						Cancelar
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade modalInfo" id="modalEliminarUsuario" tabindex="-1" role="dialog"
+		aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<p class="modal-subtitle">
+						Estás eliminando al usuario:
+					</p>
+					<h2 class="modal-title marginBottom-1-5 text-center">Nombre del usuario</h2>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-danger btn-large" data-bs-dismiss="modal">
+						Eliminar
+					</button>
+					<button type="button" class="btn link-button" data-bs-dismiss="modal">
+						Cancelar
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade modalInfo" id="modalFiltrosCasos" tabindex="-1" role="dialog"
+		aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-lg" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<h1 class="modal-title marginBottom-1-5 text-center">Selecciona los filtros</h1>
+
+					<div class="row">
+						<div class="col-lg-6 marginBottom-2">
+							<label for="inputUser" class="form-label-admin">Tipo de Designación</label>
+							<div class="form-check">
+								<input class="form-check-input" type="checkbox" value=""
+									id="checkContratacionPublicaFc">
+								<label class="form-check-label" for="checkContratacionPublicaFc">
+									Contratación Pública
+								</label>
+							</div>
+							<div class="form-check">
+								<input class="form-check-input" type="checkbox" value="" id="checkArbitrajeGeneralFcFc">
+								<label class="form-check-label" for="checkArbitrajeGeneralFcFc">
+									Arbitraje General
+								</label>
+							</div>
+							<div class="form-check">
+								<input class="form-check-input" type="checkbox" value=""
+									id="checkArbitrajeEmergenciaFcFc">
+								<label class="form-check-label" for="checkArbitrajeEmergenciaFcFc">
+									Arbitraje de Emergencia
+								</label>
+							</div>
+							<div class="form-check">
+								<input class="form-check-input" type="checkbox" value=""
+									id="checkArbitrajePeritajeFcFc">
+								<label class="form-check-label" for="checkArbitrajePeritajeFcFc">
+									Peritaje
+								</label>
+							</div>
+							<div class="form-check">
+								<input class="form-check-input" type="checkbox" value=""
+									id="checkResolucionDisputasFcFc">
+								<label class="form-check-label" for="checkResolucionDisputasFcFc">
+									Junta de Resolución de Disputas
+								</label>
+							</div>
+							<small class="text-help">
+								<span class="material-icons">
+									report_problem
+								</span>
+								Campo obligatorio
+							</small>
+						</div>
+
+						<div class="col-lg-6 marginBottom-2">
+							<label for="inputUser" class="form-label-admin">Estado</label>
+							<div class="form-check">
+								<input class="form-check-input" type="checkbox" value="" id="checkHabilitadoFc">
+								<label class="form-check-label" for="checkHabilitadoFc">
+									Habilitado
+								</label>
+							</div>
+							<div class="form-check">
+								<input class="form-check-input" type="checkbox" value="" id="checkNoHabilitadoFc">
+								<label class="form-check-label" for="checkNoHabilitadoFc">
+									No Habilitado
+								</label>
+							</div>
+							<small class="text-help">
+								<span class="material-icons">
+									report_problem
+								</span>
+								Campo obligatorio
+							</small>
+						</div>
+					</div>
+
+				</div>
+				<div class="modal-footer marginBottom-2">
+					<button type="button" class="btn btn-large primary-button" data-bs-dismiss="modal">
+						Aplicar filtros
+					</button>
+					<button type="button" class="btn btn-large link-button" data-bs-dismiss="modal">
+						Cancelar
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Fin Modals -->
+
+	<!--   Bootstrap JS Files   -->
+	<script src="js/bootstrap/jquery.3.2.1.min.js"></script>
+	<script src="js/bootstrap/bootstrap.bundle.min.js"></script>
+	<script src="js/main.js"></script>
+	<script src="view/util/Utilitario.js"></script>
+	<script src="view/login/logout.js"></script>
+</body>
+
+</html>

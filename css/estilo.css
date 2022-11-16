@@ -1,25 +1,27 @@
 @font-face {
-	font-family: "Imprima";
-	src: url("../font/Imprima-Regular.ttf");
-	font-weight: normal;
-	font-style: normal;
-}
-body { 
-    /* background-image: url('../assets/fondos/fondo.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center; */
     font-family: "Imprima";
-} 
+    src: url("../font/Imprima-Regular.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
 
-.color{
+body {
+
+    font-family: "Imprima";
+}
+
+.color {
     background: #F9748F;
 }
 
-.btncolor{
-   background: #0C2B98;
+.btncolor {
+    background: #0C2B98;
 }
 
-
-
+.bg-login {
+    background-image: url('../assets/fondos/fondo.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
