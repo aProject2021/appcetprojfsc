@@ -15,42 +15,39 @@
             <form action="" class="row g-2">
                 <div>
                     <div class="mb-2 col-md-12">
-                        <label for="fprofesional">Familia Profesional</label>
-                        <select class="form-control" class="form-select"
-                            aria-label="Default select example">
-                            <option selected>Seleccionar opción </option>
-                            <option value="1">A</option>
-                            <option value="2">B</option>
+                        <label for="cbo-familia">Familia Profesional</label>
+                        <select class="form-control" class="form-select" aria-label="Default select example"
+                            id="cbo-familia">
                         </select>
                     </div>
                     <div class="mb-2 col-md-12">
-                        <label for="Ginstrucción">Opción Ocupacional</label>
-                        <select class="form-control" class="form-select"
-                            aria-label="Default select example">
-                            <option selected>Seleccionar opción </option>
-                            <option value="1">A</option>
-                            <option value="2">B</option>
+                        <label for="cbo-opcion">Opción Ocupacional</label>
+                        <select class="form-control" class="form-select" aria-label="Default select example"
+                            id="cbo-opcion">
                         </select>
                     </div>
 
                     <div class="mb-2 col-md-12">
                         <label for="nmodulo">Nombre de Módulo</label>
-                        <input type="text" class="form-control" name="nmodulo" id="nmodulo"
+                        <input type="text" class="form-control" name="nmodulo" id="input-modulo-nombre"
                             placeholder="Ejm. Instalaciones Electricas">
+                        <span class="mensaje-error" id="error_nombre"></span>
                     </div>
                     <!-- --Aqui empieza falta completar--- -->
                     <div class="mb-2 col-md-3">
                         <div><label for="nmodulo">Duración de horas</label></div>
-                        <div><input type="text" class="form-control" name="nmodulo" id="nmodulo"
-                                placeholder=" "></div>
+                        <div><input type="text" class="form-control" name="nmodulo" id="input-modulo-horas"
+                                placeholder="">
+                            <span class="mensaje-error" id="error_horas"></span>
+                        </div>
                     </div>
                 </div>
                 <div class="d-grid gap-18 d-md-flex justify-content-md-end mt-4">
-                    <button class="btn btn-large secundary-button text-blue mx-3 btn-registro-modulo"
-                        type="button">Cancelar</button>
+                    <button class="btn btn-large secundary-button text-blue mx-3 btn-registro-modulo" type="button"
+                        onclick="regresarModulo()">Cancelar</button>
 
-                    <button class="btn btn-large primary-button mx-1 btn-registro-modulo"
-                        type="button">Guardar</button>
+                    <button class="btn btn-large primary-button mx-1 btn-registro-modulo" type="button"
+                        onclick="registrarModulo()">Guardar</button>
                 </div>
 
             </form>
@@ -59,3 +56,6 @@
     </div>
 
 </div>
+<script src="view/comun/familiaprofesional.js"></script>
+<script src="view/comun/opcionocupacional.js"></script>
+<script src="view/modulo/accion.js"></script>

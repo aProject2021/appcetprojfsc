@@ -33,8 +33,9 @@ var modificarOpcion = () => {
         opcion_id = datos.id_opcion_ocupacional
         document.getElementById("input-opcion-nombre").value = datos.nombre
         id_seleccion = datos.id_familia_profesional
-        document.getElementById("cbo-familia").value = datos.id_familia_profesional
+        consultarComunFamilia()
     } else {
+        consultarComunFamilia()
         opcion_id = 0
     }
 }
