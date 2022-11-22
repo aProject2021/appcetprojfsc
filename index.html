@@ -23,13 +23,15 @@
     <div class="fw-bold">Usuario</div>  
     <div>
         <div>
-            <input class="form-control" type="text" placeholder="Ejem: usuario@gmail.com ">
+            <input class="form-control" type="text" placeholder="Ejem: usuario@gmail.com " id="input-usuario">
+            <span class="mensaje-error" id="error_in_usuario"></span>
         </div>
     </div>
     <div class="fw-bold mt-3">Contraseña</div> 
     <div>
         <div>
-            <input class="form-control" type="password" placeholder="Contraseña">
+            <input class="form-control" type="password" placeholder="Contraseña" id="input-clave">
+            <span class="mensaje-error" id="error_in_clave"></span>
         </div>
     </div>
     <div class="btn btn-primary text-white w-100 mt-4" id="btn_ingresar">Ingresar</div>
@@ -40,7 +42,13 @@
     <script src="js/bootstrap/bootstrap.bundle.js"></script>
     <script src="js/bootstrap/popper.min.js"></script>
     <script src="js/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="js/plugin/sweetalert/sweetalert.min.js"></script>
+    <!--  Script Utilitarios    -->
     <script src="view/util/Utilitario.js"></script>
+    <script src="view/util/Variables.js"></script>
+    <script src="view/util/Consumo.js"></script>
+    
+    <!--  Script acceso    -->
     <script src="view/login/login.js"></script>
 </body>
 

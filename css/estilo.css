@@ -25,3 +25,9 @@ body {
     background-attachment: fixed;
     background-position: center;
 }
+.mensaje-error{
+    color: #F9748F;
+    font-size: 12px;
+    font-family: "Imprima";
+    display: none;
+}

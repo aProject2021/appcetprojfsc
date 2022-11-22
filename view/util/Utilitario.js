@@ -2,10 +2,10 @@ const abrirVentana = (ruta) => {
     window.location.href = ruta;
 }
 
-const mostrarModalMensaje = (titulo, mensaje) => {
-    document.getElementById("modal_mensaje_titulo").innerHTML = titulo
-    document.getElementById("modal_mensaje_texto").innerHTML = mensaje
-    $("#modalMensaje").modal("show")
+const mostrarModalMensaje = (titulo, mensaje, tipo) => {
+    swal(titulo,
+        mensaje,
+        tipo);
 }
 
 const mostrarMensajeError = (input_id, mensaje) => {
@@ -14,9 +14,9 @@ const mostrarMensajeError = (input_id, mensaje) => {
     document.getElementById(input_id).style.display = "block";
 }
 const limpiarMensajesError = () => {
-    let errores = document.getElementsByClassName("error");
+    let errores = document.getElementsByClassName("mensaje-error");
     Array.prototype.forEach.call(errores, (error) => {
-        error.style.display = "none";        
+        error.style.display = "none";
     })
 }
 const limpiarMensajeErrorObj = (input_id) => {
@@ -43,18 +43,18 @@ const formarFecha = (fecha) => {
 const EnDescryptClave = (cadena) => {
     let llave = "CEARLATAM"
     let encrypted = CryptoJS.AES.encrypt(cadena, llave)
-    let decrypted = CryptoJS.AES.decrypt(encrypted,llave)
+    let decrypted = CryptoJS.AES.decrypt(encrypted, llave)
     return decrypted.toString()
 }
-const crearCombos=(nombre, data, inicial, seleccione) =>{
+const crearCombos = (nombre, data, inicial, seleccione) => {
     let datos = JSON.parse(data)
     let combo = document.getElementById(nombre)
-    if(seleccione){
+    if (seleccione) {
         combo.innerHTML += `<option value="0">Seleccione</option>`
     }
-    datos.forEach((elemento)=>{
+    datos.forEach((elemento) => {
         let selected = ""
-        if(elemento.codigo === inicial){
+        if (elemento.codigo === inicial) {
             selected = "selected"
         }
         combo.innerHTML += `<option ${selected} value="${elemento.codigo}" data-add="${elemento.variable}">${elemento.descripcion}</option>`

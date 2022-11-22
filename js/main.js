@@ -341,16 +341,3 @@ btnToggle.addEventListener('click', function () {
 
 // End admin btn sidebar togle menu
 
-// Drag & Drop
-const $inputFile = document.getElementById("file");
-const $iconFile = document.getElementById("iconFile");
-const $textFile = document.getElementById("textFile");
-
-$inputFile.addEventListener("change", (e) => {
-  if (e.target.files.length) {
-    $iconFile.className = "fas fa-folder";
-    $textFile.innerText = `Has agregado este documento: ${e.target.files[0].name}`;
-  }
-});
-
-// End Drag & Drop
