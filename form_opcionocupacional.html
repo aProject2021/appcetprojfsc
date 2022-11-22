@@ -16,28 +16,26 @@
                 <div>
                     <div>
                         <div class="mb-2 col-md-12">
-                            <label for="fprofesional">Familia Profesional</label>
-                            <select class="form-control" class="form-select"
-                                aria-label="Default select example">
-                                <option selected>Seleccionar opción </option>
-                                <option value="1">A</option>
-                                <option value="2">B</option>
+                            <label for="cbo-familia">Familia Profesional</label>
+                            <select class="form-control" class="form-select" id="cbo-familia">
                             </select>
+                            <span class="mensaje-familia" id="error_nombre"></span>
                         </div>
 
 
                         <div class="mb-2 col-md-12">
                             <label for="nombre">Nombre</label>
-                            <input type="text" class="form-control" name="nombre" id="nombre"
+                            <input type="text" class="form-control" name="nombre" id="input-opcion-nombre"
                                 placeholder="Ejm. Eléctricidad">
+                            <span class="mensaje-error" id="error_nombre"></span>
                         </div>
                     </div>
                     <div class="d-grid gap-18 d-md-flex justify-content-md-end mt-4">
-                        <button class="btn btn-large secundary-button text-blue mx-3 btn-registro-opcion"
-                            type="button">Cancelar</button>
+                        <button class="btn btn-large secundary-button text-blue mx-3 btn-registro-opcion" type="button"
+                            onclick="regresarOpcion()">Cancelar</button>
 
-                        <button class="btn btn-large primary-button mx-1 btn-registro-opcion"
-                            type="button">Guardar</button>
+                        <button class="btn btn-large primary-button mx-1 btn-registro-opcion" type="button"
+                            onclick="registrarOpcion()">Guardar</button>
                     </div>
 
             </form>
@@ -46,3 +44,5 @@
     </div>
 
 </div>
+<script src="view/comun/familiaprofesional.js"></script>
+<script src="view/opcionocupacional/accion.js"></script>
