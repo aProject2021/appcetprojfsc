@@ -12,7 +12,7 @@
                     Exportar
                 </button>
                 <button type="button" id="btn-nuevo-docente" name="button"
-                    class="btn btn-large primary-button">
+                    class="btn btn-large primary-button" onclick="nuevoRegistroDocente()">
                     Nuevo
                 </button>
             </div>
@@ -34,18 +34,11 @@
                         <th scope="col">Acciones</th>
                     </tr>
                 </thead>
-                <tbody class="table-group-divider">
-                    <tr>
-                        <th scope="row">1</th>
-                        <td>Electricidad y Electronica</td>
-                        <td>Electricidad</td>
-                        <td>Instalaciones Electricas</td>
-                        <td>Juan Frank Ruiz</td>
-                        <td> </td>
-                    </tr>
+                <tbody class="table-group-divider" id="tb_docente">
                 </tbody>
             </table>
         </section>
 
     </div>
 </div>
+<script src="view/docente/lista.js"></script>

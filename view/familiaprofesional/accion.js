@@ -30,6 +30,7 @@ var registrarFamilia = () => {
 }
 
 var modificarFamilia = () => {
+    val_cbo_comun_opcion = false
     if (sessionStorage.getItem("familia") !== null) {
         let datos = JSON.parse(sessionStorage.getItem("familia"))
         familia_id = datos.id_familia_profesional

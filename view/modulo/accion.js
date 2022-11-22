@@ -34,6 +34,8 @@ var registrarModulo = () => {
 }
 
 var modificarModulo = () => {
+    val_cbo_comun_opcion = true
+    val_cbo_comun_modulo = false
     if (sessionStorage.getItem("modulo") !== null) {
         let datos = JSON.parse(sessionStorage.getItem("modulo"))
         modulo_id = datos.id_modulo

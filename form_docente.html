@@ -15,45 +15,40 @@
             <form action="" class="row g-2">
                 <div>
                     <div class="mb-2 col-md-12">
-                        <label for="fprofesional">Familia Profesional</label>
+                        <label for="cbo-familia">Familia Profesional</label>
                         <select class="form-control" class="form-select"
-                            aria-label="Default select example">
-                            <option selected>Seleccionar opción </option>
-                            <option value="1">A</option>
-                            <option value="2">B</option>
+                            aria-label="Default select example" id="cbo-familia">
                         </select>
+                        <span class="mensaje-error" id="error_id_familia_profesional"></span>
                     </div>
                     <div class="mb-2 col-md-12">
-                        <label for="Ginstrucción">Opción Ocupacional</label>
+                        <label for="cbo-opcion">Opción Ocupacional</label>
                         <select class="form-control" class="form-select"
-                            aria-label="Default select example">
-                            <option selected>Seleccionar opción </option>
-                            <option value="1">A</option>
-                            <option value="2">B</option>
+                            aria-label="Default select example" id="cbo-opcion">
                         </select>
+                        <span class="mensaje-error" id="error_id_opcion_ocupacional"></span>
                     </div>
                     <div class="mb-2 col-md-12">
-                        <label for="Ecivil">Módulos</label>
+                        <label for="cbo-modulo">Módulos</label>
                         <select class="form-control" class="form-select"
-                            aria-label="Default select example">
-                            <option selected>Seleccionar opción</option>
-                            <option value="1">A</option>
-                            <option value="2">B</option>s
+                            aria-label="Default select example" id="cbo-modulo">
                         </select>
+                        <span class="mensaje-error" id="error_id_modulo"></span>
                     </div>
 
                     <div class="mb-2 col-md-12">
-                        <label for="npdocentes">Nombres y Apellidos del Docente</label>
-                        <input type="text" class="form-control" name="npdocentes" id="npdocentes"
+                        <label for="input-docente-nombre">Nombres y Apellidos del Docente</label>
+                        <input type="text" class="form-control" name="npdocentes" id="input-docente-nombre"
                             placeholder="Ejm. Juan Frank Ruiz">
+                            <span class="mensaje-error" id="error_nombre_apellido"></span>
                     </div>
                 </div>
                 <div class="d-grid gap-18 d-md-flex justify-content-md-end mt-4">
                     <button class="btn btn-large secundary-button text-blue mx-3 btn-registro-docente"
-                        type="button">Cancelar</button>
+                        type="button" onclick="regresarDocente()">Cancelar</button>
 
                     <button class="btn btn-large primary-button mx-1 btn-registro-docente"
-                        type="button">Guardar</button>
+                        type="button" onclick="registrarDocente()">Guardar</button>
                 </div>
 
             </form>
@@ -62,3 +57,7 @@
     </div>
 
 </div>
+<script src="view/comun/familiaprofesional.js"></script>
+<script src="view/comun/opcionocupacional.js"></script>
+<script src="view/comun/modulo.js"></script>
+<script src="view/docente/accion.js"></script>
