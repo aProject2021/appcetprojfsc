@@ -9,6 +9,7 @@ document.getElementById("btn_ingresar").addEventListener("click", () => {
 })
 
 const respuestaAcceso = (data) => {
-    sessionStorage.setItem("token", data.out_token)
+    console.log(data.data.out_token)
+    sessionStorage.setItem("token", data.data.out_token)
     abrirVentana("home.html")
 }

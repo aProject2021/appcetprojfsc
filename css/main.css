@@ -1,4 +1,3 @@
-
 @font-face {
   font-family: "Imprima";
   src: url("../font/Imprima-Regular.ttf");
@@ -16,7 +15,7 @@
   --b-01: #FFFFFF;
   --a-01: #114357;
   --a-02: #F78CA0;
-  --a-03:#4DADBC;
+  --a-03: #4DADBC;
   --c-01: #C5DADE;
   --c-02: #E6EEEF;
   --error: #DF2020;
@@ -78,6 +77,7 @@ small {
 .disabled-color {
   color: var(--g-02);
 }
+
 /* End colors */
 
 /* Font weight */
@@ -97,9 +97,10 @@ small {
   background-color: var(--c-02);
 }
 
-.bg-light{
+.bg-light {
   background-color: var(--b-01) !important;
 }
+
 /* end bg colors */
 
 /* Margins */
@@ -198,6 +199,7 @@ small {
 .paddingTop-3 {
   padding-top: 3rem;
 }
+
 /* End Paddings */
 
 /* Buttons */
@@ -219,7 +221,8 @@ small {
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
-.btn:focus, .btn.focus {
+.btn:focus,
+.btn.focus {
   outline: 0;
   box-shadow: none;
 }
@@ -270,15 +273,17 @@ small {
   border-color: 1px solid var(--success);
 }
 
-.secundary-button{
+.secundary-button {
   background-color: var(--b-01);
   color: var(--a-01);
   border-color: 1px solid var(--success);
 }
+
 .secundary-button:hover {
   background-color: var(--a-01);
   color: var(--b-01);
 }
+
 .primary-button.disabled {
   background-color: var(--g-02);
   color: var(--b-01);
@@ -293,7 +298,7 @@ small {
 .link-button {
   /* background-color: salmon; */
   color: var(--a-02);
-  padding: 0.5rem  0;
+  padding: 0.5rem 0;
   text-decoration: underline;
   font-weight: 600;
 }
@@ -316,7 +321,7 @@ small {
 .link-button-danger {
   /* background-color: salmon; */
   color: var(--error);
-  padding: 0.5rem  0;
+  padding: 0.5rem 0;
   text-decoration: underline;
   font-weight: 600;
 }
@@ -345,14 +350,16 @@ small {
   background-color: var(--g-03);
 }
 
-.btn-light:focus, .btn-light.focus {
+.btn-light:focus,
+.btn-light.focus {
   color: var(--n-01);
   background-color: var(--g-03);
   border-color: var(--g-03);
   box-shadow: 0 0 0 0.2rem rgba(216, 217, 219, 0.5);
 }
 
-.btn-light.disabled, .btn-light:disabled {
+.btn-light.disabled,
+.btn-light:disabled {
   background-color: var(--g-02);
   color: var(--b-01);
   opacity: 1;
@@ -367,6 +374,7 @@ small {
   border: 1px solid var(--a-02);
   color: var(--a-02);
 }
+
 /* End Buttons */
 
 .show {
@@ -477,7 +485,8 @@ input[type=number]::-webkit-outer-spin-button {
   color: var(--a-01);
 }
 
-.form-control, .form-select {
+.form-control,
+.form-select {
   display: block;
   width: 100%;
   padding: 1rem;
@@ -495,11 +504,13 @@ input[type=number]::-webkit-outer-spin-button {
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
-.form-control:hover, .form-select:hover {
+.form-control:hover,
+.form-select:hover {
   box-shadow: 0px 4px 8px rgba(45, 45, 45, 0.16);
 }
 
-.form-control:focus, .form-select:focus {
+.form-control:focus,
+.form-select:focus {
   box-shadow: inset 0 0 0 2px var(--a-02);
   outline: 0;
   color: var(--n-01);
@@ -522,6 +533,7 @@ input[type=number]::-webkit-outer-spin-button {
   font-size: 1.5rem;
   color: var(--n-01);
 }
+
 /* fin form login */
 
 
@@ -541,7 +553,8 @@ input[type=number]::-webkit-outer-spin-button {
   margin-right: .5rem;
 }
 
-.error-input .form-control, .error-input .form-select {
+.error-input .form-control,
+.error-input .form-select {
   box-shadow: inset 0 0 0 2px var(--error);
   outline: 0;
   color: var(--error);
@@ -558,7 +571,7 @@ input[type=number]::-webkit-outer-spin-button {
   background-color: var(--b-01);
 }
 
-.table > :not(:first-child) {
+.table> :not(:first-child) {
   /* border-top: 2px solid currentColor; */
   border-top: none;
 }
@@ -569,7 +582,9 @@ input[type=number]::-webkit-outer-spin-button {
   padding: 1rem;
 }
 
-.table tbody th, .table tbody td, .table thead th {
+.table tbody th,
+.table tbody td,
+.table thead th {
   /* background-color: pink; */
   vertical-align: middle;
   padding: .5rem 1rem;
@@ -593,80 +608,83 @@ input[type=number]::-webkit-outer-spin-button {
 /* fin Main */
 
 /* Modal Contraseña olvidada */
-  .modal-dialog {
-    border-radius: .5rem;
-    overflow: hidden;
-  }
+.modal-dialog {
+  border-radius: .5rem;
+  overflow: hidden;
+}
 
-  .btn-close {
-    box-sizing: content-box;
-    width: 1em;
-    height: 1em;
-    padding: 0.25em 0.25em;
-    color: var(--a-01);
-    background: transparent url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3cpath d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/%3e%3c/svg%3e") center/1em auto no-repeat;
-    border: 0;
-    border-radius: 0.25rem;
-    opacity: 0.5;
-  }
-  .btn-close:hover {
-    color: var(--a-01);
-    text-decoration: none;
-    opacity: 0.75;
-  }
-  .btn-close:focus {
-    outline: 0;
-    box-shadow: none;
-    opacity: 1;
-  }
+.btn-close {
+  box-sizing: content-box;
+  width: 1em;
+  height: 1em;
+  padding: 0.25em 0.25em;
+  color: var(--a-01);
+  background: transparent url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3cpath d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/%3e%3c/svg%3e") center/1em auto no-repeat;
+  border: 0;
+  border-radius: 0.25rem;
+  opacity: 0.5;
+}
 
-  .modal-header {
-    padding-top: 1.5rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
-  }
+.btn-close:hover {
+  color: var(--a-01);
+  text-decoration: none;
+  opacity: 0.75;
+}
 
-  .modal-header, .modal-footer {
-    border: none;
-  }
+.btn-close:focus {
+  outline: 0;
+  box-shadow: none;
+  opacity: 1;
+}
 
-  .modal-body {
-    /* background-color: pink; */
-    color: var(--a-01);
-    padding-left: 2rem;
-    padding-right: 2rem;
-    padding-top: 0;
-    padding-bottom: 1.5rem;
-  }
+.modal-header {
+  padding-top: 1.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
 
-  .modal-subtitle {
-    text-align: center;
-    font-size: 1.5rem;
-  }
+.modal-header,
+.modal-footer {
+  border: none;
+}
 
-  .modal-title {
-    font-size: 1.5rem;
-    line-height: 2rem;
-    font-weight: 600;
-  }
+.modal-body {
+  /* background-color: pink; */
+  color: var(--a-01);
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 0;
+  padding-bottom: 1.5rem;
+}
 
-  .modal-footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-bottom: 1.5rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    padding-top: 0;
-  }
+.modal-subtitle {
+  text-align: center;
+  font-size: 1.5rem;
+}
 
-  .modalInfo .iconModal {
-    font-size: 2rem;
-  }
+.modal-title {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 600;
+}
 
-  .modal .form-group {
-    text-align: left;
-  }
+.modal-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 1.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 0;
+}
+
+.modalInfo .iconModal {
+  font-size: 2rem;
+}
+
+.modal .form-group {
+  text-align: left;
+}
 
 /* Fin modal contraseña olvidada */
 
@@ -761,6 +779,7 @@ input[type=number]::-webkit-outer-spin-button {
 .card-sorteo span {
   color: var(--success);
 }
+
 /* Fin modal caso creado */
 
 /* SISTEMA ALEATORIO */
@@ -770,7 +789,7 @@ input[type=number]::-webkit-outer-spin-button {
   padding-right: 12px;
   padding-left: 12px;
   display: flex;
-  justify-content:center;
+  justify-content: center;
 }
 
 .nav-pills-stepper .nav-item {
@@ -809,7 +828,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .nav-pills-stepper .nav-link.active,
-.nav-pills-stepper .show > .nav-link {
+.nav-pills-stepper .show>.nav-link {
   color: var(--a-02);
   background-color: var(--c-02);
   border-bottom: solid 2px var(--a-01);
@@ -948,6 +967,7 @@ input[type=number]::-webkit-outer-spin-button {
   display: flex;
   align-items: center;
 }
+
 /* Fin grid cards abogados */
 
 .content-chosen {
@@ -1060,6 +1080,7 @@ input[type=number]::-webkit-outer-spin-button {
   margin-left: auto;
   margin-right: auto;
 }
+
 /* END DISCLAIMER */
 
 #content-resumen {
@@ -1075,7 +1096,7 @@ input[type=number]::-webkit-outer-spin-button {
   align-items: center;
   padding: 1.5rem;
   background-color: rgba(197, 218, 222, .9);
-  width:100%;
+  width: 100%;
   height: 100%;
   position: fixed;
   top: 0;
@@ -1095,6 +1116,7 @@ input[type=number]::-webkit-outer-spin-button {
 .loader span {
   font-size: 1.5rem;
 }
+
 /* END LOADER */
 
 /* ADMIN STYLES */
@@ -1150,11 +1172,11 @@ input[type=number]::-webkit-outer-spin-button {
   font-weight: lighter;
 }
 
-.sidebar-admin-list .btn:hover  {
+.sidebar-admin-list .btn:hover {
   background-color: var(--g-02);
 }
 
-.sidebar-admin-list .btn:focus  {
+.sidebar-admin-list .btn:focus {
   background-color: var(--g-02);
 }
 
@@ -1201,7 +1223,7 @@ input[type=number]::-webkit-outer-spin-button {
 .admin-panel {
   /* background-color: lavender; */
   padding: 2rem;
-  margin-top:  74px;
+  margin-top: 74px;
   min-height: calc(100vh - 74px);
 }
 
@@ -1216,12 +1238,13 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .panel {
-  display: none;
+  display: block;
 }
 
 .active-panel {
   display: block;
 }
+
 /* end main panel admin */
 
 /* content panels */
@@ -1267,6 +1290,7 @@ input[type=number]::-webkit-outer-spin-button {
   font-weight: 600;
   margin-bottom: .5rem;
 }
+
 /* end content panels */
 
 /* Accordion */
@@ -1305,6 +1329,7 @@ input[type=number]::-webkit-outer-spin-button {
   background-image: url("../fonts/icons/chevron-down-outline.svg");
   transform: rotate(-180deg);
 }
+
 .accordion-button::after {
   flex-shrink: 0;
   width: 1.5rem;
@@ -1319,7 +1344,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 .content-accordion-btn {
   /* background-color: pink; */
-  display:flex;
+  display: flex;
   align-items: center;
 }
 
@@ -1335,6 +1360,7 @@ input[type=number]::-webkit-outer-spin-button {
   margin-right: .5rem;
   border-radius: 50%;
 }
+
 /* End Accordion */
 
 .content-btns-controls-panel {
@@ -1346,7 +1372,7 @@ input[type=number]::-webkit-outer-spin-button {
   margin-right: 1.5rem;
 }
 
-  /* Upload images product */
+/* Upload images product */
 
 .wrap-img-preview {
   /* background-color: lavender; */
@@ -1374,8 +1400,8 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .content-info-upload-img {
- /* background-color: yellow; */
- margin-left: 1rem;
+  /* background-color: yellow; */
+  margin-left: 1rem;
 }
 
 .label-upload-img {
@@ -1418,16 +1444,18 @@ input[type=number]::-webkit-outer-spin-button {
   color: var(--g-01);
 }
 
-  /* End upload images product */
+/* End upload images product */
 
 /* Drag & Drop */
 .dragDropContent {
   /* background-color: pink; */
   border-radius: 1rem;
 }
+
 .Form_control {
   position: relative;
 }
+
 .Form__label {
   cursor: pointer;
   display: flex;
@@ -1437,6 +1465,7 @@ input[type=number]::-webkit-outer-spin-button {
   flex-direction: column;
   align-items: center;
 }
+
 .Form__label i {
   font-size: 5rem;
   color: var(--a-02);
@@ -1530,6 +1559,7 @@ input[type=number]::-webkit-outer-spin-button {
 .accordionCollapse .accordion-item {
   border: none;
 }
+
 /* End Accordion Collapse */
 
 .textCenter {
@@ -1537,8 +1567,9 @@ input[type=number]::-webkit-outer-spin-button {
   display: block;
   text-align: center;
 }
+
 /* END ADMIN STYLES */
-.menu-item-title{
+.menu-item-title {
   font-size: 16px;
   font-weight: bold;
   width: 100%;
@@ -1546,8 +1577,16 @@ input[type=number]::-webkit-outer-spin-button {
   text-align: left;
   color: var(--b-01);
 }
-.nav-item-logo{
+
+.nav-item-logo {
   color: var(--b-01);
   font-weight: bold;
   margin-bottom: 0px;
+}
+
+.mensaje-error {
+  color: #F9748F;
+  font-size: 12px;
+  font-family: "Imprima";
+  display: none;
 }

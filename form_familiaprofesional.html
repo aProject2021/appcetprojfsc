@@ -1,0 +1,47 @@
+<div class="panel" id="familia-profesional-registro-panel">
+    <div class="row">
+        <div class="wrap-header-panel marginBottom-2">
+            <div class="header-panel">
+                <h2>
+                    Familia Profesional
+                </h2>
+            </div><!-- showAgregarEspecialidad -->
+        </div>
+
+
+
+        <section class="d-flex justify-content-center mt-4">
+
+            <form action="" class="row g-2">
+                <div>
+                    <div class="mb-2 col-md-12">
+                        <label for="nombredocente">Nombre</label>
+                        <input type="text" class="form-control" name="nombredocente" id="input-familia-nombre"
+                            placeholder="Ejm. Eléctricidad">
+                            <span class="mensaje-error" id="error_nombre"></span>
+                    </div>
+                    <div class="mb-2 col-md-12">
+                        <label for="descripción">Descripción</label>
+                        <input type="text" class="form-control" name="descripción" id="input-familia-descripcion"
+                            placeholder="Escribe aquí">
+                            <span class="mensaje-error" id="error_descripcion"></span>
+                    </div>
+                    <!-- <div class="mb-3 col-md-12 mt-3">
+                        <input type="file" id="formFileMultiple" multiple>
+                    </div>-->
+                </div>
+                <div class="d-grid gap-18 d-md-flex justify-content-md-end mt-4">
+                    <button class="btn btn-large secundary-button text-blue mx-3 btn-registro-familia" type="button"
+                        onclick="regresarFamilia()">Cancelar</button>
+
+                    <button class="btn btn-large primary-button mx-1 btn-registro-familia" type="button"
+                        onclick="registrarFamilia()">Guardar</button>
+                </div>
+
+            </form>
+        </section>
+
+    </div>
+
+</div>
+<script src="view/familiaprofesional/accion.js"></script>
