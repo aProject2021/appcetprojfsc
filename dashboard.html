@@ -1,4 +1,46 @@
 <div class="panel active-panel" id="dashboard-panel">
-    <div class="row">
+    <div class="header-panel">
+        <h1>Dashboard</h1>
+    </div>
+
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+        <div class="col">
+            <div class="card card-chart">
+                <div class="card-body">
+                    <h4 class="card-title">Alumnos matriculados por edad</h4>
+                    <canvas id="dash-matricula-edad"></canvas>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card card-chart">
+                <div class="card-body">
+                    <h4 class="card-title">Alumnos matriculados por género</h4>
+                    <canvas id="dash-matricula-genero"></canvas>
+                </div>
+            </div>
+        </div>        
+    </div>
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+        <div class="col">
+            <div class="card card-chart">
+                <div class="card-body">
+                    <h4 class="card-title">Alumnos matriculados por modulo</h4>
+                    <canvas id="dash-matricula-modulo"></canvas>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card card-chart">
+                <div class="card-body">
+                    <h4 class="card-title">Donaciones mensuales</h4>
+                    <canvas id="dash-mes-donacion"></canvas>
+                </div>
+            </div>
+        </div>        
     </div>
 </div>
+<script src="view/dashboard/matriculaxedad.js"></script>
+<script src="view/dashboard/matriculaxgenero.js"></script>
+<script src="view/dashboard/matriculaxmodulo.js"></script>
+<script src="view/dashboard/donacionesxmes.js"></script>

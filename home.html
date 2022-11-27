@@ -24,7 +24,7 @@
 	<script src="js/bootstrap/jquery.3.2.1.min.js"></script>
 	<script src="js/bootstrap/bootstrap.bundle.min.js"></script>
 	<script src="js/plugin/sweetalert/sweetalert.min.js"></script>
-	
+	<script src="js/plugin/chart.js/chart.min.js"></script>
 	<!--  Script Utilitarios    -->
 	<script src="view/util/Utilitario.js"></script>
 	<script src="view/util/Variables.js"></script>
@@ -71,7 +71,7 @@
 			<p class="menu-item-title">MENÚ</p>
 			<ul class="sidebar-admin-list">
 				<li class="item-sidebar">
-					<button class="btn btn-toggle collapsed showDashboard active-item-sidebar active">
+					<button class="btn btn-toggle collapsed showDashboard active-item-sidebar active" id="opcion-dashboard">
 						Dashboard
 					</button>
 				</li>
@@ -657,7 +657,9 @@
 
 	<script src="js/main.js"></script>
 	<script src="view/login/logout.js"></script>
-
+	<script>
+		$("#admin-panel").load("dashboard.html");
+	</script>
 </body>
 
 </html>
