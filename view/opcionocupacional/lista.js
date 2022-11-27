@@ -57,4 +57,11 @@ var listarOpcion = () => {
     sessionStorage.removeItem("opcion")
     ws_get(url_http + "opcionocupacional", mostrarOpcion)
 }
+var exportarOpcion = () => {
+    if (lista_opcion.length > 0) {
+        window.location.href = url_http + "reporte/opcionocupacional"
+    } else {
+        mostrarModalMensaje("Alerta", "No se encontraron registros", "warning")
+    }
+}
 listarOpcion()

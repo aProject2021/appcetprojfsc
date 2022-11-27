@@ -8,7 +8,7 @@ var mostrarFamilia = (data) => {
     tabla_familia.innerHTML = ""
     if (data.estado === 200) {
         let datos = data.data
-        lista_familia = datos        
+        lista_familia = datos
         datos.forEach(element => {
             let contenido =
                 `<tr>
@@ -56,5 +56,12 @@ if (sessionStorage.getItem("mensaje") !== null) {
 var listarFamilia = () => {
     sessionStorage.removeItem("familia")
     ws_get(url_http + "familiaprofesional", mostrarFamilia)
+}
+var exportarFamilia = () => {
+    if (lista_familia.length > 0) {
+        window.location.href = url_http + "reporte/familiaprofesional"
+    } else {
+        mostrarModalMensaje("Alerta", "No se encontraron registros", "warning")
+    }
 }
 listarFamilia()

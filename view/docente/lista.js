@@ -59,4 +59,11 @@ var listarDocente = () => {
     sessionStorage.removeItem("docente")
     ws_get(url_http + "docente", mostrarDocente)
 }
+var exportarDocente = () => {
+    if (lista_docente.length > 0) {
+        window.location.href = url_http + "reporte/docente"
+    } else {
+        mostrarModalMensaje("Alerta", "No se encontraron registros", "warning")
+    }
+}
 listarDocente()

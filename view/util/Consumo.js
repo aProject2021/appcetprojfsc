@@ -106,7 +106,6 @@ function ws_get(url, metodocallback) {
     });
 
 }
-
 function ws_delete(url, metodocallback) {
     $.ajax({
         type: 'DELETE',

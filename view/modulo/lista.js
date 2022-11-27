@@ -8,7 +8,7 @@ var mostrarModulo = (data) => {
     tabla_modulo.innerHTML = ""
     if (data.estado === 200) {
         let datos = data.data
-        lista_modulo = datos        
+        lista_modulo = datos
         datos.forEach(element => {
             let contenido =
                 `<tr>
@@ -57,5 +57,12 @@ if (sessionStorage.getItem("mensaje") !== null) {
 var listarModulo = () => {
     sessionStorage.removeItem("modulo")
     ws_get(url_http + "modulo", mostrarModulo)
+}
+var exportarModulo = () => {
+    if (lista_modulo.length > 0) {
+        window.location.href = url_http + "reporte/modulo"
+    } else {
+        mostrarModalMensaje("Alerta", "No se encontraron registros", "warning")
+    }
 }
 listarModulo()

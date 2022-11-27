@@ -8,7 +8,7 @@ var mostrarMatricula = (data) => {
     tabla_matricula.innerHTML = ""
     if (data.estado === 200) {
         let datos = data.data
-        lista_matricula = datos        
+        lista_matricula = datos
         datos.forEach(element => {
             let contenido =
                 `<tr>
@@ -59,5 +59,12 @@ if (sessionStorage.getItem("mensaje") !== null) {
 var listarMatricula = () => {
     sessionStorage.removeItem("matricula")
     ws_get(url_http + "matricula", mostrarMatricula)
+}
+var exportarMatricula = () => {
+    if (lista_matricula.length > 0) {
+        window.location.href = url_http + "reporte/matricula"
+    } else {
+        mostrarModalMensaje("Alerta", "No se encontraron registros", "warning")
+    }
 }
 listarMatricula()
