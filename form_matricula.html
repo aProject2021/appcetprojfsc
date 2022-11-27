@@ -16,129 +16,106 @@
                 <div>
                     <div class="row">
                         <div class="mb-2 col-md-8">
-                            <label for="dni">Número de Documento</label>
-                            <input type="text" class="form-control" name="dni" id="dni"
+                            <label for="input-matricula-dni">Número de Documento</label>
+                            <input type="text" class="form-control" name="dni" id="input-matricula-dni"
                                 placeholder="Ejm.73019146">
                         </div>
                         <div class="d-grid gap-16 d-md-flex justify-content-md-end mt-4 mb-2 col-md-4 ">
-                            <button class="btn btn-primary " type="button" id="btn-nuevo-estudiante">Nuevo
+                            <button class="btn btn-primary " type="button" id="btn-nuevo-estudiante"
+                                onclick="nuevoRegistroEstudiante()">Nuevo
                                 Estudiante</button>
                         </div>
                     </div>
 
                     <div class="mb-2 col-md-12">
-                        <label for="nombre">Apellidos y Nombres</label>
-                        <input type="text" class="form-control" name="nombre" id="nombre"
+                        <label for="input-matricula-nombre">Apellidos y Nombres</label>
+                        <input type="text" class="form-control" name="nombre" id="input-matricula-nombre"
                             placeholder="Ejm. Monika Milagros Amelia">
+                            <span class="mensaje-error" id="error_id_alumno"></span>
                     </div>
                     <div class="row">
                         <div class="mb-2 col-md-6">
-                            <label for="Ginstrucción">Ciclo</label>
-                            <select class="form-control" class="form-select"
-                                aria-label="Default select example">
-                                <option selected>Seleccionar opción </option>
-                                <option value="1">Primer Ciclo</option>
-                                <option value="2">Segundo Ciclo</option>
+                            <label for="cbo-ciclo">Ciclo</label>
+                            <select class="form-control" class="form-select" aria-label="Default select example"
+                                id="cbo-ciclo">
                             </select>
                         </div>
                         <div class="mb-2 col-md-6">
-                            <label for="Ecivil">Especialidad</label>
-                            <select class="form-control" class="form-select"
-                                aria-label="Default select example">
-                                <option selected>Seleccionar opción </option>
-                                <option value="1">Soltero</option>
-                                <option value="2">Casado</option>s
+                            <label for="cbo-familia">Especialidad</label>
+                            <select class="form-control" class="form-select" aria-label="Default select example"
+                                id="cbo-familia">
                             </select>
                         </div>
                     </div>
                     <div class="row">
                         <div class="mb-2 col-md-6">
-                            <label for="pais">Módulo</label>
-                            <select class="form-control" class="form-select"
-                                aria-label="Default select example">
-                                <option selected>Seleccionar opción </option>
-                                <option value="1">Perú</option>
-                                <option value="2">Venezuela</option>s
+                            <label for="cbo-opcion">Opción Ocupacional</label>
+                            <select class="form-control" class="form-select" aria-label="Default select example"
+                                id="cbo-opcion">
                             </select>
                         </div>
                         <div class="mb-2 col-md-6">
-                            <label for="departamento">Docente</label>
-                            <select class="form-control" class="form-select"
-                                aria-label="Default select example">
-                                <option selected>Seleccionar opción </option>
-                                <option value="1">Lima</option>
-                                <option value="2">Amazonas</option>s
+                            <label for="cbo-modulo">Módulo</label>
+                            <select class="form-control" class="form-select" aria-label="Default select example"
+                                id="cbo-modulo">
                             </select>
+                            <span class="mensaje-error" id="error_id_modulo"></span>
                         </div>
+                    </div>
+                    <div class="mb-2 col-md-12">
+                        <label for="cbo-docente">Docente</label>
+                        <select class="form-control" class="form-select" aria-label="Default select example"
+                            id="cbo-docente">
+                        </select>
+                        <span class="mensaje-error" id="error_id_docente"></span>
                     </div>
                     <div class="row">
                         <div class="mb-2 col-md-4">
-                            <label for="duración">Duración</label>
-                            <input type="text" class="form-control" name="duración" id="duración"
+                            <label for="input-matricula-duracion">Duración</label>
+                            <input type="text" class="form-control" name="duración" id="input-matricula-duracion"
                                 placeholder=" ">
                         </div>
                         <div class="mb-2 col-md-4">
-                            <label for="provincia">Turno</label>
-                            <select class="form-control" class="form-select"
-                                aria-label="Default select example">
-                                <option selected>Seleccionar opción </option>
-                                <option value="1">Lima</option>
-                                <option value="2">Ayacucho</option>s
+                            <label for="cbo-turno">Turno</label>
+                            <select class="form-control" class="form-select" aria-label="Default select example"
+                                id="cbo-turno">
                             </select>
                         </div>
                         <div class="mb-2 col-md-4">
-                            <label for="departamento">Sección</label>
-                            <select class="form-control" class="form-select"
-                                aria-label="Default select example">
-                                <option selected> Seleccionar opción </option>
-                                <option value="1">Lurin</option>
-                                <option value="2">Cieneguilla</option>s
+                            <label for="cbo-seccion">Sección</label>
+                            <select class="form-control" class="form-select" aria-label="Default select example"
+                                id="cbo-seccion">
                             </select>
                         </div>
                     </div>
                     <div class="row">
                         <div class="mb-2 col-md-6">
-                            <label for="finicio">Fecha de Inicio</label>
-                            <input type="text" class="form-control" name="finicio" id="finicio"
+                            <label for="input-matricula-fecha-inicio">Fecha de Inicio</label>
+                            <input type="date" class="form-control" name="finicio" id="input-matricula-fecha-inicio"
                                 placeholder="02/11/2022">
+                                <span class="mensaje-error" id="error_fecha_inicio"></span>
                         </div>
                         <div class="mb-2 col-md-6">
-                            <label for="ftermino">Fecha de Termino</label>
-                            <input type="text" class="form-control" name="ftermino" id="ftermino"
+                            <label for="input-matricula-fecha-fin">Fecha de Termino</label>
+                            <input type="date" class="form-control" name="ftermino" id="input-matricula-fecha-fin"
                                 placeholder="22/12/2022">
+                                <span class="mensaje-error" id="error_fecha_termino"></span>
                         </div>
                     </div>
                     <div class="mb-2 col-md-12">
                         <label for="ftermino">Requisitos</label>
                     </div>
-                    <div class="form-check form-check-inline col-md-3 ">
+                    <div class="mb-2 col-md-12" id="div-requisitos">
 
-                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1"
-                            value="option1">
-                        <label class="form-check-label" for="inlineCheckbox1">Copia de DNI</label>
                     </div>
-                    <div class="form-check form-check-inline col-md-3">
-                        <input class="form-check-input" type="checkbox" id="inlineCheckbox2"
-                            value="option2">
-                        <label class="form-check-label" for="inlineCheckbox2">4 Fotos Carnet</label>
-                    </div>
-                    <div class="form-check form-check-inline col-md-3">
-                        <input class="form-check-input" type="checkbox" id="inlineCheckbox2"
-                            value="option2">
-                        <label class="form-check-label" for="inlineCheckbox2">1 Mica A4</label>
-                    </div>
-                    <div class="form-check form-check-inline col-md-2">
-                        <input class="form-check-input" type="checkbox" id="inlineCheckbox2"
-                            value="option2">
-                        <label class="form-check-label" for="inlineCheckbox2">Donación</label>
-                    </div>
+
                 </div>
                 <div class="d-grid gap-18 d-md-flex justify-content-md-end mt-4">
-                    <button class="btn btn-large secundary-button text-blue mx-3 btn-registro-matricula"
-                        type="button">Cancelar</button>
+                    <button class="btn btn-large secundary-button text-blue mx-3 btn-registro-matricula" type="button"
+                        onclick="regresarMatricula()">Cancelar</button>
 
                     <button class="btn btn-large primary-button mx-1 btn-registro-matricula"
-                        type="button">Guardar</button>
+                        type="button" onclick="registrarMatricula()">Guardar</button>
                 </div>
 
             </form>
@@ -147,3 +124,12 @@
     </div>
 
 </div>
+<script src="view/comun/docente.js"></script>
+<script src="view/comun/turno.js"></script>
+<script src="view/comun/ciclo.js"></script>
+<script src="view/comun/seccion.js"></script>
+<script src="view/comun/familiaprofesional.js"></script>
+<script src="view/comun/opcionocupacional.js"></script>
+<script src="view/comun/modulo.js"></script>
+<script src="view/comun/requisito.js"></script>
+<script src="view/matricula/accion.js"></script>

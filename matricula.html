@@ -12,7 +12,7 @@
                     Exportar
                 </button>
                 <button type="button" id="btn-nuevo-matricula" name="button"
-                    class="btn btn-large primary-button">
+                    class="btn btn-large primary-button" onclick="nuevoRegistroMatricula()">
                     Nuevo
                 </button>
             </div>
@@ -35,24 +35,8 @@
                         <th scope="col" colspan="2">Acciones</th>
                     </tr>
                 </thead>
-                <tbody class="table-group-divider">
-                    <tr>
-                        <th scope="row">1</th>
-                        <td colspan="2">14-10-2022</td>
-                        <td colspan="2">Monika Ruiz Pando</td>
-                        <td colspan="2">Electricidad</td>
-                        <td colspan="2">Módulo 1</td>
-                        <td colspan="2">Juan Ruiz Soto</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">2</th>
-                        <td colspan="2">14-10-2022</td>
-                        <td colspan="2">Alicia Cerna Pajuelo</td>
-                        <td colspan="2">Electricidad</td>
-                        <td colspan="2">Módulo 2</td>
-                        <td colspan="2">Carlos Torres Robles</td>
-                    </tr>
-
+                <tbody class="table-group-divider" id="tb_matricula">
+                    
                 </tbody>
             </table>
 
@@ -60,3 +44,4 @@
 
     </div>
 </div>
+<script src="view/matricula/lista.js"></script>
