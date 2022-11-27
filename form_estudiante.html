@@ -16,141 +16,124 @@
                 <div>
                     <div class="row">
                         <div class="mb-2 col-md-6">
-                            <label for="nombre">Tipo de documento de identidad</label>
-                            <select class="form-control" class="form-select"
-                                aria-label="Default select example">
-                                <option selected>Seleccionar opción </option>
-                                <option value="1">DNI</option>
-                                <option value="2">CARNET DE EXTRANJERÍA</option>
+                            <label for="cbo-documento">Tipo de documento de identidad</label>
+                            <select class="form-control" class="form-select" aria-label="Default select example"
+                                id="cbo-documento">
                             </select>
                         </div>
                         <div class="mb-2 col-md-6">
-                            <label for="dni">Número de Documento</label>
-                            <input type="text" class="form-control" name="dni" id="dni"
-                                placeholder="Ejm.73019146">
+                            <label for="input-alumno-dni">Número de Documento</label>
+                            <input type="text" class="form-control" name="dni" id="input-alumno-dni"
+                                placeholder="Ejm.73019146" maxlength="9">
+                            <span class="mensaje-error" id="error_nro_documento"></span>
                         </div>
                     </div>
                     <div class="mb-2 col-md-12">
-                        <label for="nombre">Nombres</label>
-                        <input type="text" class="form-control" name="nombre" id="nombre"
+                        <label for="input-alumno-nombre">Nombres</label>
+                        <input type="text" class="form-control" name="nombre" id="input-alumno-nombre"
                             placeholder="Ejm. Monika Milagros Amelia">
+                        <span class="mensaje-error" id="error_nombres"></span>
                     </div>
                     <div class="row">
                         <div class="mb-2 col-md-6">
-                            <label for="apaterno">Apellido Paterno</label>
-                            <input type="text" class="form-control" name="apaterno" id="apaterno"
+                            <label for="input-alumno-apaterno">Apellido Paterno</label>
+                            <input type="text" class="form-control" name="apaterno" id="input-alumno-apaterno"
                                 placeholder="Ejm. Ruiz">
+                            <span class="mensaje-error" id="error_apellido_paterno"></span>
                         </div>
                         <div class="mb-2 col-md-6">
-                            <label for="amaterno">Apellido Materno</label>
-                            <input type="text" class="form-control" name="amaterno" id="amaterno"
+                            <label for="input-alumno-amaterno">Apellido Materno</label>
+                            <input type="text" class="form-control" name="amaterno" id="input-alumno-amaterno"
                                 placeholder="Ejm. Pando">
+                            <span class="mensaje-error" id="error_apellido_materno"></span>
                         </div>
                     </div>
                     <div class="mb-2 col-md-12">
 
                         <label for="sexo">Sexo</label>
-                        <input type="radio" name="sexo" id="masculino" value="masculino"> Masculino
-                        <input type="radio" name="sexo" id="femenino" value="femeninoo"> Femenino
+                        <input type="radio" name="sexo" checked id="masculino" value="M"> Masculino
+                        <input type="radio" name="sexo" id="femenino" value="F"> Femenino
                         </label>
                     </div>
                     <div class="row">
                         <div class="mb-2 col-md-6">
-                            <label for="Fnacimiento">Fecha de Nacimiento</label>
-                            <input type="text" class="form-control" name="Fnacimiento" id="Fnacimiento"
+                            <label for="input-alumno-fecha">Fecha de Nacimiento</label>
+                            <input type="date" class="form-control" name="Fnacimiento" id="input-alumno-fecha"
                                 placeholder="12/08/2000">
+                            <span class="mensaje-error" id="error_fecha_nacimiento"></span>
                         </div>
                         <div class="mb-2 col-md-6">
-                            <label for="Edad">Edad</label>
-                            <input type="text" class="form-control" name="edad" id="edad"
+                            <label for="input-alumno-edad">Edad</label>
+                            <input type="text" class="form-control" name="edad" id="input-alumno-edad"
                                 placeholder="Ejm. 22">
                         </div>
                     </div>
                     <div class="row">
                         <div class="mb-2 col-md-6">
-                            <label for="Ginstrucción">Grado de Instrucción</label>
-                            <select class="form-control" class="form-select"
-                                aria-label="Default select example">
-                                <option selected>Seleccionar opción </option>
-                                <option value="1">Secundaria</option>
-                                <option value="2">Estudios Superiores</option>
+                            <label for="cbo-instruccion">Grado de Instrucción</label>
+                            <select class="form-control" class="form-select" aria-label="Default select example"
+                                id="cbo-instruccion">
                             </select>
                         </div>
                         <div class="mb-2 col-md-6">
-                            <label for="Ecivil">Estado Civil</label>
-                            <select class="form-control" class="form-select"
-                                aria-label="Default select example">
-                                <option selected>Seleccionar opción </option>
-                                <option value="1">Soltero</option>
-                                <option value="2">Casado</option>s
+                            <label for="cbo-estado">Estado Civil</label>
+                            <select class="form-control" class="form-select" aria-label="Default select example"
+                                id="cbo-estado">
                             </select>
                         </div>
                     </div>
                     <div class="row">
                         <div class="mb-2 col-md-6">
-                            <label for="pais">País</label>
-                            <select class="form-control" class="form-select"
-                                aria-label="Default select example">
-                                <option selected>Seleccionar opción </option>
-                                <option value="1">Perú</option>
-                                <option value="2">Venezuela</option>s
+                            <label for="cbo-pais">País</label>
+                            <select class="form-control" class="form-select" aria-label="Default select example"
+                                id="cbo-pais">
                             </select>
                         </div>
                         <div class="mb-2 col-md-6">
-                            <label for="departamento">Departamento</label>
-                            <select class="form-control" class="form-select"
-                                aria-label="Default select example">
-                                <option selected>Seleccionar opción </option>
-                                <option value="1">Lima</option>
-                                <option value="2">Amazonas</option>s
+                            <label for="cbo-departamento">Departamento</label>
+                            <select class="form-control" class="form-select" aria-label="Default select example"
+                                id="cbo-departamento">
                             </select>
                         </div>
                     </div>
                     <div class="row">
                         <div class="mb-2 col-md-6">
-                            <label for="provincia">Provincia</label>
-                            <select class="form-control" class="form-select"
-                                aria-label="Default select example">
-                                <option selected>Seleccionar opción </option>
-                                <option value="1">Lima</option>
-                                <option value="2">Ayacucho</option>s
+                            <label for="cbo-provincia">Provincia</label>
+                            <select class="form-control" class="form-select" aria-label="Default select example"
+                                id="cbo-provincia">
                             </select>
                         </div>
                         <div class="mb-2 col-md-6">
-                            <label for="departamento">Distrito</label>
-                            <select class="form-control" class="form-select"
-                                aria-label="Default select example">
-                                <option selected> Seleccionar opción
-                                <option>
-                                <option value="1">Lurin</option>
-                                <option value="2">Cieneguilla</option>s
+                            <label for="cbo-distrito">Distrito</label>
+                            <select class="form-control" class="form-select" aria-label="Default select example"
+                                id="cbo-distrito">
                             </select>
                         </div>
                     </div>
                     <div class="mb-2 col-md-12">
-                        <label for="dirección">Dirección</label>
-                        <input type="text" class="form-control" name="dirección" id="dirección"
+                        <label for="input-alumno-direccion">Dirección</label>
+                        <input type="text" class="form-control" name="dirección" id="input-alumno-direccion"
                             placeholder="Ejm. Jr. Moore 412 Int.B">
                     </div>
                     <div class="row">
                         <div class="mb-2 col-md-6">
-                            <label for="telefono">Télefono</label>
-                            <input type="text" class="form-control" name="telefono" id="telefono"
+                            <label for="input-alumno-telefono">Télefono</label>
+                            <input type="text" class="form-control" name="telefono" id="input-alumno-telefono"
                                 placeholder="Ejm. 999555888">
                         </div>
                         <div class="mb-2 col-md-6">
-                            <label for="correo">Correo</label>
-                            <input type="text" class="form-control" name="correo" id="correo"
+                            <label for="input-alumno-correo">Correo</label>
+                            <input type="text" class="form-control" name="correo" id="input-alumno-correo"
                                 placeholder="Ejm. monikaruizpando@gmail.com">
                         </div>
                     </div>
                 </div>
                 <div class="d-grid gap-18 d-md-flex justify-content-md-end mt-4">
-                    <button class="btn btn-large secundary-button text-blue mx-3 btn-registro-estudiante"
-                        type="button">Cancelar</button>
+                    <button class="btn btn-large secundary-button text-blue mx-3 btn-registro-estudiante" type="button"
+                        onclick="regresarMatricula()">Cancelar</button>
 
-                    <button class="btn btn-large primary-button mx-1 btn-registro-estudiante"
-                        type="button">Guardar</button>
+                    <button class="btn btn-large primary-button mx-1 btn-registro-estudiante" type="button"
+                        onclick="registrarEstudiante()">Guardar</button>
                 </div>
 
             </form>
@@ -159,3 +142,11 @@
     </div>
 
 </div>
+<script src="view/comun/tipodocumento.js"></script>
+<script src="view/comun/instruccion.js"></script>
+<script src="view/comun/estado.js"></script>
+<script src="view/comun/departamento.js"></script>
+<script src="view/comun/provincia.js"></script>
+<script src="view/comun/distrito.js"></script>
+<script src="view/comun/pais.js"></script>
+<script src="view/estudiante/accion.js"></script>

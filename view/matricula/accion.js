@@ -89,6 +89,14 @@ var registrarMatricula = () => {
 }
 
 var modificarMatricula = () => {
+
+    if (sessionStorage.getItem("alumno-id") !== null) {
+        estudiante_id = parseInt(sessionStorage.getItem("alumno-id"))
+        document.getElementById("input-matricula-dni").value = sessionStorage.getItem("alumno-documento")
+        document.getElementById("input-matricula-nombre").value = sessionStorage.getItem("alumno-nombres")
+        sessionStorage.removeItem("alumno-id")
+    }
+
     val_cbo_comun_opcion = true
     val_cbo_comun_modulo = true
     val_view_duracion = true
@@ -98,10 +106,10 @@ var modificarMatricula = () => {
         matricula_id = datos.id_matricula
         estudiante_id = datos.id_alumno
         id_seleccion = datos.id_familia
-        id_seleccion_familia =  datos.id_familia
+        id_seleccion_familia = datos.id_familia
         id_seleccion_opcion = datos.id_opcion
-        id_seleccion_modulo =  datos.id_modulo
-        id_seleccion_turno =  datos.id_turno
+        id_seleccion_modulo = datos.id_modulo
+        id_seleccion_turno = datos.id_turno
         id_seleccion_seccion = datos.id_seccion
         id_seleccion_ciclo = datos.id_ciclo
         id_seleccion_docente = datos.id_docente
@@ -119,7 +127,7 @@ var modificarMatricula = () => {
         matricula_id = 0
         val_id_matricula = 0
         consultarComunTurno()
-        consultarComunFamilia()        
+        consultarComunFamilia()
         consultarComunRequisito()
     }
 }
