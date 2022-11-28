@@ -27,6 +27,10 @@ var mostrarMatricula = (data) => {
                     type="button" onclick="eliminarMatricula(${element.id_matricula})">
                     <img src="img/icons/eliminar.png" alt="Eliminar">
                     </button>
+                    <button class="btn btn-outline-light"
+                    type="button" onclick="descargarMatricula(${element.id_matricula})">
+                    <img src="img/icons/doc.png" alt="Ficha">
+                    </button>
                     </td>
                 </tr>`
             tabla_matricula.innerHTML += contenido
@@ -46,6 +50,9 @@ var respuestaEliminar = (data) => {
 }
 var eliminarMatricula = (id) => {
     ws_delete(url_http + "matricula/" + id, respuestaEliminar)
+}
+var descargarMatricula = (id) => {
+    window.location.href = url_http + "reporte/matricula/" + id + "/ficha"
 }
 var editarMatricula = (id) => {
     let matricula = lista_matricula.find(elemento => elemento.id_matricula === id)
