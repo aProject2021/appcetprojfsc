@@ -46,4 +46,7 @@ var mostrarDashMatriculaPorGenero = (data) => {
     }
   }
 }
-ws_get(url_http + "dashboard/matricula/genero", mostrarDashMatriculaPorGenero)
+var consultarDashGenero = () => {
+ws_get(url_http + "dashboard/matricula/genero?in_anio="+document.getElementById("cbo-anio").value, mostrarDashMatriculaPorGenero)
+}
+consultarDashGenero()

@@ -28,23 +28,23 @@ var mostrarDashMatriculaPorGenero = (data) => {
     listaData.push(diciembre !== undefined ? diciembre.valor : 0)
 
     let topMatriculaData = {
-      labels: ["Enero", "Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre",
-    "Noviembre","Diciembre"],
+      labels: ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre",
+        "Noviembre", "Diciembre"],
       datasets: [{
         label: 'Donaciones',
         data: listaData,
         backgroundColor: ['rgba(255, 99, 132, 0.2)',
-        'rgba(54, 162, 235, 0.2)',
-        'rgba(255, 206, 86, 0.2)',
-        'rgba(75, 192, 192, 0.2)',
-        'rgba(153, 102, 255, 0.2)',
-        'rgba(255, 159, 64, 0.2)',
-        'rgba(255, 99, 132, 0.2)',
-        'rgba(54, 162, 235, 0.2)',
-        'rgba(255, 206, 86, 0.2)',
-        'rgba(75, 192, 192, 0.2)',
-        'rgba(153, 102, 255, 0.2)',
-        'rgba(255, 159, 64, 0.2)'],
+          'rgba(54, 162, 235, 0.2)',
+          'rgba(255, 206, 86, 0.2)',
+          'rgba(75, 192, 192, 0.2)',
+          'rgba(153, 102, 255, 0.2)',
+          'rgba(255, 159, 64, 0.2)',
+          'rgba(255, 99, 132, 0.2)',
+          'rgba(54, 162, 235, 0.2)',
+          'rgba(255, 206, 86, 0.2)',
+          'rgba(75, 192, 192, 0.2)',
+          'rgba(153, 102, 255, 0.2)',
+          'rgba(255, 159, 64, 0.2)'],
         borderColor: [
           'rgba(255,99,132,1)',
           'rgba(54, 162, 235, 1)',
@@ -91,4 +91,7 @@ var mostrarDashMatriculaPorGenero = (data) => {
     }
   }
 }
-ws_get(url_http + "dashboard/donacion/mes", mostrarDashMatriculaPorGenero)
+var consultarDashDonacion = () => {
+  ws_get(url_http + "dashboard/donacion/mes?in_anio=" + document.getElementById("cbo-anio").value, mostrarDashMatriculaPorGenero)
+}
+consultarDashDonacion()

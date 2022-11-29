@@ -1,7 +1,24 @@
 <div class="panel active-panel" id="dashboard-panel">
-    <div class="header-panel">
-        <h1>Dashboard</h1>
+    <div class="wrap-header-panel marginBottom-2">
+        <div class="header-panel">
+            <h2>
+                Dashboard
+            </h2>
+        </div><!-- showAgregarEspecialidad -->
+        <div class="header-panel d-flex align-items-center">
+            <div class="p-3">
+                <label for="cbo-anio">Año: </label>
+            </div>
+            <div style="width: 10rem;">
+                <select class="form-control" class="form-select" aria-label="Default select example" id="cbo-anio">
+                </select>
+            </div>
+
+        </div>
+
     </div>
+
+
 
     <div class="row row-cols-1 row-cols-md-2 g-4">
         <div class="col">
@@ -19,7 +36,7 @@
                     <canvas id="dash-matricula-genero"></canvas>
                 </div>
             </div>
-        </div>        
+        </div>
     </div>
     <div class="row row-cols-1 row-cols-md-2 g-4">
         <div class="col">
@@ -37,9 +54,10 @@
                     <canvas id="dash-mes-donacion"></canvas>
                 </div>
             </div>
-        </div>        
+        </div>
     </div>
 </div>
+<script src="view/comun/anio.js"></script>
 <script src="view/dashboard/matriculaxedad.js"></script>
 <script src="view/dashboard/matriculaxgenero.js"></script>
 <script src="view/dashboard/matriculaxmodulo.js"></script>

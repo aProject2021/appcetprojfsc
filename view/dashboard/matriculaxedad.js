@@ -38,7 +38,7 @@ var mostrarDashMatriculaPorEdad = (data) => {
       }]
     };
     var options = {
-      scales: {        
+      scales: {
         yAxes: [{
           ticks: {
             beginAtZero: true
@@ -53,7 +53,7 @@ var mostrarDashMatriculaPorEdad = (data) => {
           radius: 0
         }
       }
-  
+
     };
     if ($("#dash-matricula-edad").length) {
       var barChartCanvas = $("#dash-matricula-edad").get(0).getContext("2d");
@@ -65,4 +65,7 @@ var mostrarDashMatriculaPorEdad = (data) => {
     }
   }
 }
-ws_get(url_http + "dashboard/matricula/edad", mostrarDashMatriculaPorEdad)
+var consultarDashEdad = () => {
+  ws_get(url_http + "dashboard/matricula/edad?in_anio=" + document.getElementById("cbo-anio").value, mostrarDashMatriculaPorEdad)
+}
+consultarDashEdad()

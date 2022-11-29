@@ -38,7 +38,7 @@ var mostrarDashMatriculaPorModulo = (data) => {
       }]
     };
     var options = {
-      scales: {        
+      scales: {
         yAxes: [{
           ticks: {
             beginAtZero: true
@@ -53,7 +53,7 @@ var mostrarDashMatriculaPorModulo = (data) => {
           radius: 0
         }
       }
-  
+
     };
     if ($("#dash-matricula-modulo").length) {
       var barChartCanvas = $("#dash-matricula-modulo").get(0).getContext("2d");
@@ -65,4 +65,7 @@ var mostrarDashMatriculaPorModulo = (data) => {
     }
   }
 }
-ws_get(url_http + "dashboard/matricula/modulo", mostrarDashMatriculaPorModulo)
+var consultarDashModulo = () => {
+  ws_get(url_http + "dashboard/matricula/modulo?in_anio=" + document.getElementById("cbo-anio").value, mostrarDashMatriculaPorModulo)
+}
+consultarDashModulo()
